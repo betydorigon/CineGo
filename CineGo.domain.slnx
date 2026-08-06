@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="CineGo.API/CineGo.API.csproj" />
+  <Project Path="CineGo.Application/CineGo.Application.csproj" />
+  <Project Path="CineGo.Desktop/CineGo.Desktop.csproj" />
+  <Project Path="CineGo.domain/CineGo.domain.csproj" />
+  <Project Path="CineGo.Infrastructure/CineGo.Infrastructure.csproj" />
+</Solution>

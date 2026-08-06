@@ -1,0 +1,6 @@
+@CineGo.API_HostAddress = http://localhost:5210
+
+GET {{CineGo.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
