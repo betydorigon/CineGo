@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CineGo.Application\CineGo.Application.csproj" />
+    <ProjectReference Include="..\CineGo.domain\CineGo.domain.csproj" />
     <ProjectReference Include="..\CineGo.Infrastructure\CineGo.Infrastructure.csproj" />
   </ItemGroup>
 
