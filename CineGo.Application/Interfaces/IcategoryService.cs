@@ -9,9 +9,9 @@ namespace CineGo.Application.Interfaces
     {
         Task<IEnumerable<CategoryDto>> GetAllAsync();
         Task<CategoryDto?> GetByIdAsync(int id);
-        Task<CategoryDto> CreateAsync(CategoryCreateDto dto);
-        Task<CategoryDto?> UpdateAsync(int id, CategoryUpdateDto dto);
-        Task DeleteAsync(int id);
+        Task<CategoryDto> CreateAsync(CreateCategoryDto dto);
+        Task<CategoryDto?> UpdateAsync(int id, UpdateCategoryDto dto);
+        Task<bool> DeleteAsync(int id);
         Task<int> CountAsync();
     }
 }

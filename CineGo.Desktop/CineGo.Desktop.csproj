@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="DTOs\" />
+    <Folder Include="Forms\" />
     <Folder Include="Helpers\" />
     <Folder Include="UserControls\" />
     <Folder Include="Services\" />

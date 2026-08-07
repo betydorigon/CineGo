@@ -19,19 +19,19 @@ namespace CineGo.Application.Services
             _filmeRepository = filmeRepository;
         }
 
-        public async Task<IEnumerable<FilmesDto>> GetAllSync()
+        public async Task<IEnumerable<FilmeDto>> GetAllSync()
         {
             var filmes = await _filmeRepository.GetAllAsync();
             return filmes.Select(MapToDto);
         }
 
-        public async Task<FilmesDto?> GetByIdAsync(int id)
+        public async Task<FilmeDto?> GetByIdAsync(int id)
         {
             var filme = await _filmeRepository.GetByIdAsync(id);
             return filme == null ? null : MapToDto(filme);
         }
 
-        public async Task<IEnumerable<FilmesDto>> GetByCategoryIdAsync(int categoryId)
+        public async Task<IEnumerable<FilmeDto>> GetByCategoryIdAsync(int categoryId)
         {
             var filmes = await _filmeRepository.GetByCategoryAsync(categoryId);
             return filmes.Select(MapToDto);
@@ -39,7 +39,7 @@ namespace CineGo.Application.Services
 
         
 
-        public async Task<FilmesDto> CreateAsync(CreateFilmesDto filmesDto) 
+        public async Task<FilmeDto> CreateAsync(CreateFilmesDto filmesDto) 
         {
             var filme = new Filmes
             {
@@ -57,7 +57,7 @@ namespace CineGo.Application.Services
             return MapToDto(filme);
         }
 
-        public async Task<FilmesDto> UpdateAsync(int id, UpdateFilmesDto filmesDto)
+        public async Task<FilmeDto> UpdateAsync(int id, UpdateFilmesDto filmesDto)
         {
             var filme = await _filmeRepository.GetByIdAsync(id);
             if (filme == null) return null;
@@ -87,9 +87,9 @@ namespace CineGo.Application.Services
             return await _filmeRepository.CountAsync();
         }
 
-        private static FilmesDto MapToDto(Filmes filme)
+        private static FilmeDto MapToDto(Filmes filme)
         {
-            return new FilmesDto
+            return new FilmeDto
             {
                 Id = filme.Id,
                 Titulo = filme.Titulo,

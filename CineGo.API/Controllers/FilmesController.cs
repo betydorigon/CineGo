@@ -19,6 +19,7 @@
 
 
 using CineGo.Application.DTOs;
+using CineGo.Application.Interfaces;
 using CineGo.domain;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -57,7 +58,7 @@ public class FilmesController : ControllerBase
     /// GET /api/games/{id}
     /// </summary>
     [HttpGet("{id}")]
-    public async Task<ActionResult<FilmesDto>> GetById(int id)
+    public async Task<ActionResult<FilmeDto>> GetById(int id)
     {
         var filme = await _filmeService.GetByIdAsync(id);
 
@@ -88,7 +89,7 @@ public class FilmesController : ControllerBase
     /// </summary>
     [HttpPut("{id}")]
     [Authorize(Roles = "Admin")]
-    public async Task<ActionResult<FilmesDto>> Update(int id, [FromBody] UpdateGameDto dto)
+    public async Task<ActionResult<FilmeDto>> Update(int id, [FromBody] UpdateGameDto dto)
     {
         var filme = await _filmeService.UpdateAsync(id, dto);
 

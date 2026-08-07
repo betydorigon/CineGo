@@ -8,13 +8,13 @@ namespace CineGo.Application.ViewModels
     public class HomeViewModel
     {
        public IEnumerable<CategoryDto> Categories { get; set; } = new List<CategoryDto>();
-       public IEnumerable<FilmesDto> Filmes { get; set; } = new List<FilmesDto>();
+       public IEnumerable<FilmeDto> Filmes { get; set; } = new List<FilmeDto>();
     }
 
     public class FilmesDetailsViewModel
     {
-        public FilmesDto Filme { get; set; } = new FilmesDto();
-        public IEnumerable<FilmesDto> RelatedFilmes { get; set; } = new List<FilmesDto>();
+        public FilmeDto Filme { get; set; } = new FilmeDto();
+        public IEnumerable<FilmeDto> RelatedFilmes { get; set; } = new List<FilmeDto>();
     }
 
     public class DashboardViewModel
@@ -22,7 +22,7 @@ namespace CineGo.Application.ViewModels
         public int TotalFilmes { get; set; }
         public int TotalCategorias { get; set; }
         public int TotalUsuarios { get; set; }
-        public IEnumerable<FilmesDto> RecentFilmes { get; set; } = new List<FilmesDto>();
+        public IEnumerable<FilmeDto> RecentFilmes { get; set; } = new List<FilmeDto>();
     }
 
     public class FilmeFormViewModel
@@ -40,7 +40,7 @@ namespace CineGo.Application.ViewModels
 
     public class  FilmeListViewModel
     {
-        public IEnumerable<FilmesDto> Filmes { get; set; } = new List<FilmesDto>();
+        public IEnumerable<FilmeDto> Filmes { get; set; } = new List<FilmeDto>();
         public IEnumerable<CategoryDto> Categories { get; set; } = new List<CategoryDto>();
         public int? SelectedCategoryId { get; set; }
     }

@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CineGo.Application.DTOs
+namespace CineGo.Desktop.DTOs
 {
-    public class CategoryDto
+    public class CategoriaResponseDto
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public int FilmesCount { get; set; }
     }
-    public class CreateCategoryDto
+
+    public class CreateCategoriaDto
     {
         public string Name { get; set; } = string.Empty;
     }
 
-    public class UpdateCategoryDto
+    public class UpdateCategoriaDto
     {
         public string Name { get; set; } = string.Empty;
     }
