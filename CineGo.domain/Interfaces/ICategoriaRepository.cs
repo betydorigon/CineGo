@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CineGo.domain.Interfaces
 {
-    public class ICategoriaRepository
+    public interface ICategoriaRepository
     {
         Task<IEnumerable<Categoria>> GetAllAsync();
         Task<Categoria?> GetByIdAsync(int id);

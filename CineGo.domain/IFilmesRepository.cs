@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CineGo.domain
 {
-    public class IFilmesRepository
+    public interface IFilmesRepository
     {
         Task<IEnumerable<Filmes>> GetAllAsync();
         Task<Filmes?> GetByIdAsync(int id);

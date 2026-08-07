@@ -20,4 +20,12 @@ namespace CineGo.Application.DTOs
         public string ConfirmarSenha { get; set; } = string.Empty;
         public string Perfil { get; set; } = string.Empty;
     }
+
+    public class UpdateUsuarioDto
+    {
+        public string Nome { get; set; } 
+        public string Email { get; set; } 
+        public string Senha { get; set; } 
+        public string Perfil { get; set; } 
+    }
 }
