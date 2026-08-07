@@ -11,7 +11,11 @@ namespace CineGo.Infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<Filmes> builder)
         {
+            builder.ToTable("Filmes");
+
             builder.HasKey(f => f.Id);
+            builder.Property(f => f.Id)
+                .ValueGeneratedOnAdd();
 
             builder.Property(f => f.Titulo)
                 .IsRequired()
@@ -25,6 +29,27 @@ namespace CineGo.Infrastructure.Configurations
 
             builder.Property(f => f.RealeseYear)
                 .IsRequired();
+
+            builder.Property(f => f.Classificacao)
+                .IsRequired();
+
+            builder.Property(f => f.CoverImageUrl)
+                .HasMaxLength(500)
+                .HasColumnName("CoverImageUrl");
+
+            // Chave estrangeira para Categoria
+            builder.Property(f => f.CategoriaId)
+                .IsRequired()
+                .HasColumnName("CategoriaId");
+
+            builder.HasOne(f => f.Categoria)
+                .WithMany(c => c.Filmes)
+                .HasForeignKey(f => f.CategoriaId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Índice em título para buscas
+            builder.HasIndex(f => f.Titulo)
+                .HasDatabaseName("IX_Filmes_Titulo");
         }
     }
 }
