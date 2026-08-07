@@ -11,6 +11,7 @@
 // =============================================================================
 
 using CineGo.Application.DTOs;
+using CineGo.Application.Interfaces;
 using CineGo.domain.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
