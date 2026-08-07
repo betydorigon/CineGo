@@ -1,27 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using CineGo.Application.DTOs;
 using CineGo.Application.Interfaces;
+using CineGo.domain;
 using CineGo.domain.Entities;
-using CineGo.domain.Interfaces;
-using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace CineGo.Application.Services
 {
     public class FilmeServices : IFilmeService
     {
-        private readonly IFilmeService _filmeRepository;
-        public FilmeServices(IFilmeService filmeService)
+        private readonly IFilmesRepository _filmeRepository;
+
+        public FilmeServices(IFilmesRepository filmeRepository)
         {
-            _filmeRepository = filmeService;
+            _filmeRepository = filmeRepository;
         }
+
         public async Task<IEnumerable<FilmesDto>> GetAllSync()
         {
-            var filme = await _filmeRepository.GetAllSync();
-            return filme.Select(MapToDto);
-
+            var filmes = await _filmeRepository.GetAllAsync();
+            return filmes.Select(MapToDto);
         }
 
         public async Task<FilmesDto?> GetByIdAsync(int id)
@@ -30,29 +31,30 @@ namespace CineGo.Application.Services
             return filme == null ? null : MapToDto(filme);
         }
 
-        public async Task<IEnumerable<FilmesDto>> GetByCategoryAsync(int categoryId)
+        public async Task<IEnumerable<FilmesDto>> GetByCategoryIdAsync(int categoryId)
         {
-            var filmes = await _filmeRepository.GetByCategoryIdAsync(categoryId);
+            var filmes = await _filmeRepository.GetByCategoryAsync(categoryId);
             return filmes.Select(MapToDto);
         }
 
+        
+
         public async Task<FilmesDto> CreateAsync(CreateFilmesDto filmesDto) 
         {
-            var filme = new filme
+            var filme = new Filmes
             {
-                name = filmesDto.Titulo,
-                duration = filmesDto.Duracao,
-                sinopse = filmesDto.Sinopse,
-                year = filmesDto.RealeseYear,
-                categoriaID = filmesDto.CategoriaId,
+                Titulo = filmesDto.Titulo,
+                Duracao = filmesDto.Duracao,
+                Sinopse = filmesDto.Sinopse,
+                RealeseYear = filmesDto.RealeseYear,
+                CategoriaId = filmesDto.CategoriaId,
                 Classificacao = filmesDto.Classificacao,
                 CoverImageUrl = filmesDto.CoverImageUrl
             };
 
-            await _filmeRepository.AddAsync(filme);
+            await _filmeRepository.AddSync(filme);
 
             return MapToDto(filme);
-        
         }
 
         public async Task<FilmesDto> UpdateAsync(int id, UpdateFilmesDto filmesDto)
@@ -68,7 +70,7 @@ namespace CineGo.Application.Services
             filme.Classificacao = filmesDto.Classificacao;
             filme.CoverImageUrl = filmesDto.CoverImageUrl;
 
-            await _filmeRepository.UpdateAsync(filme);
+            await _filmeRepository.UpdateSync(filme);
             return MapToDto(filme);
         }
 
@@ -76,7 +78,7 @@ namespace CineGo.Application.Services
         {
             var filme = await _filmeRepository.GetByIdAsync(id);
             if (filme == null) return false;
-            await _filmeRepository.DeleteAsync(id);
+            await _filmeRepository.DeleteSync(id);
             return true;
         }
 

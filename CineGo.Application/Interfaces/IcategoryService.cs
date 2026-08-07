@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CineGo.Application.Interfaces
 {
-    public interface IcategoryService
+    public interface ICategoryService
     {
         Task<IEnumerable<CategoryDto>> GetAllAsync();
         Task<CategoryDto?> GetByIdAsync(int id);
