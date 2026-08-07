@@ -27,6 +27,7 @@ namespace CineGo.Infrastructure.Repositories
         public async Task<Categoria?> GetByIdAsync(int id)
         {
             return await _context.Categorias
+                     .Include (c => c.Filmes)
                      .AsNoTracking()
                      .FirstOrDefaultAsync(c => c.Id == id);
         }
