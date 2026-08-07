@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CineGo.Infrastructure.Configurations
 {
-    public class CategoriasConfiguration : IEntityTypeConfiguration<Categoria>
+    public class CategoriesConfiguration : IEntityTypeConfiguration<Categoria>
     {
         public void Configure(EntityTypeBuilder<Categoria> builder)
         {

@@ -8,7 +8,7 @@ using System.Text;
 
 namespace CineGo.Infrastructure.Context
 {
-    internal class CineGoDbContext : IdentityDbContext
+    public class CineGoDbContext : IdentityDbContext
     {
         public CineGoDbContext(DbContextOptions<CineGoDbContext> options) : base(options)
         {
@@ -23,7 +23,7 @@ namespace CineGo.Infrastructure.Context
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new FilmesConfiguration());
-            modelBuilder.ApplyConfiguration(new CategoriasConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoriesConfiguration());
         }
     }
 }
