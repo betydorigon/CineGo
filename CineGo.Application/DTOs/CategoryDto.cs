@@ -10,12 +10,12 @@ namespace CineGo.Application.DTOs
         public string Name { get; set; } = string.Empty;
         public int FilmesCount { get; set; }
     }
-    public class CategoryCreateDto
+    public class CreateCategoryDto
     {
         public string Name { get; set; } = string.Empty;
     }
 
-    public class CategoryUpdateDto
+    public class UpdateCategoryDto
     {
         public string Name { get; set; } = string.Empty;
     }
