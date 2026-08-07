@@ -21,4 +21,10 @@
     <ProjectReference Include="..\CineGo.domain\CineGo.domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Identity\" />
+    <Folder Include="Migrations\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>
