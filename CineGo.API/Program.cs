@@ -15,12 +15,15 @@
 
 using CineGo.Application.Interfaces;
 using CineGo.Application.Services;
+using CineGo.domain;
+using CineGo.domain.Interfaces;
 using CineGo.Infrastructure.Context;
 using CineGo.Infrastructure.Identity;
 using CineGo.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using Microsoft.OpenApi;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,7 +45,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConection
 // AddIdentity registra os serviços do Identity no container de DI.
 // AddEntityFrameworkStores conecta o Identity ao banco via EF Core.
 // =====================================================================
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(OptionsBuilderConfigurationExtensions =>
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
     // Configurações de senha (simplificadas para ensino)
     options.Password.RequireDigit = true;
@@ -51,5 +54,107 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(OptionsBuilderConfigura
     options.Password.RequireNonAlphanumeric = true;
     options.Password.RequiredLength = 6;
 }) 
-.AddEntityFrameworkStores<CineGoDbContext>();
+.AddEntityFrameworkStores<CineGoDbContext>()
 .AddDefaultTokenProviders(); // Necessário para reset de senha, email confirmation, etc.
+
+//Configuração de Cookie Authentication para a API
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Events.OnRedirectToLogin = context =>
+    {
+        context.Response.StatusCode = 401;
+        return Task.CompletedTask;
+    };
+    options.Events.OnRedirectToAccessDenied = context =>
+    { context.Response.StatusCode = 403;
+        return Task.CompletedTask;
+    };
+});
+
+// =====================================================================
+// 3. DEPENDENCY INJECTION — Registro de Repositórios e Serviços
+// =====================================================================
+//  CONCEITO: Dependency Injection (DI)
+// AddScoped registra um serviço com ciclo de vida "por requisição".
+// Isso significa que uma nova instância é criada para cada requisição HTTP.
+//
+// Exemplo: quando um controller precisa do IGameService,
+// o .NET automaticamente cria um GameService e injeta no construtor.
+// =====================================================================
+builder.Services.AddScoped<IFilmesRepository, FilmesRepository>();
+builder.Services.AddScoped<ICategoriaRepository, CategoriesRepository>();
+builder.Services.AddScoped<IFilmeService, FilmeServices>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IUsuariosServices, UsuariosService>();
+
+// =====================================================================
+// 4. CONTROLLERS
+// =====================================================================
+builder.Services.AddControllers();
+
+// =====================================================================
+// 5. SWAGGER — Documentação automática da API
+// =====================================================================
+//  CONCEITO: Swagger gera automaticamente uma interface visual
+// para testar os endpoints da API no navegador.
+// Acesse: https://localhost:PORTA/swagger
+// =====================================================================
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "CineGo API",
+        Version = "v1",
+        Description = "API REST do sistema CineGo — Catálogo de Filmes para ensino de ASP.NET Core"
+    });
+});
+
+// =====================================================================
+// 6. CORS — Permite requisições de outras origens
+// =====================================================================
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+       policy.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
+var app = builder.Build();
+
+// =====================================================================
+// PIPELINE DE MIDDLEWARES
+// =====================================================================
+//  CONCEITO: Middlewares são executados em sequência para cada requisição.
+// A ordem importa! Cada middleware processa a requisição e passa adiante.
+// =====================================================================
+
+if (app.Environment.IsDevelopment())
+{
+    // Swagger só é habilitado em ambiente de desenvolvimento
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+app.UseCors("AllowAll");
+
+//  IMPORTANTE: UseAuthentication ANTES de UseAuthorization
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapControllers();
+
+// =====================================================================
+// SEED DATA — Popula o banco com dados iniciais
+// =====================================================================
+//  CONCEITO: O seed é executado na inicialização da aplicação.
+// Ele cria categorias, filmes de exemplo e o usuário admin.
+// =====================================================================
+await SeedData.SeedAsync(app.Services);
+
+app.Run();
+
