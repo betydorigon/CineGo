@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace CineGo.Infrastructure.Identity
 {
-    internal static class SeedData
+    public static class SeedData
     {
         public static async Task InitializeAsync(IServiceProvider serviceProvider)
         {

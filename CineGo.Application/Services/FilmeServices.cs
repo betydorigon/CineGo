@@ -19,7 +19,7 @@ namespace CineGo.Application.Services
             _filmeRepository = filmeRepository;
         }
 
-        public async Task<IEnumerable<FilmeDto>> GetAllSync()
+        public async Task<IEnumerable<FilmeDto>> GetAllAsync()
         {
             var filmes = await _filmeRepository.GetAllAsync();
             return filmes.Select(MapToDto);
@@ -52,7 +52,7 @@ namespace CineGo.Application.Services
                 CoverImageUrl = filmesDto.CoverImageUrl
             };
 
-            await _filmeRepository.AddSync(filme);
+            await _filmeRepository.AddAsync(filme);
 
             return MapToDto(filme);
         }
