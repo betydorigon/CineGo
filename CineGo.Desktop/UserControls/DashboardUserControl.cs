@@ -44,11 +44,42 @@ namespace CineGo.Desktop.UserControls
 
                 var filmes = tarefaFilmes.Result;
                 var categorias = tarefaCategorias.Result;
-            } 
+
+                cardFilmesLblNumero.Text = filmes.Count.ToString();
+                cardCatedoriasLblTitulo.Text = categorias.Count.ToString();
+
+                gridUltimosFilmes.Rows.Clear();
+                foreach (var filme in filmes.OrderByDescending(X => X.CreatedAt).Take(10))
+                {
+                    gridUltimosFilmes.Rows.Add(filme.Id, filme.Titulo, filme.Categoria, filme.Duracao, filme.Classificacao, filme.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss"));
+                }
+            }
             catch (Exception ex)
             {
-
+                MessageBox.Show($"Erro ao carregar dados: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                SetCarregando(false);
+            }
+        }
+        private void AtualizarNumeroCard(Guna.UI2.WinForms.Guna2Panel card,string numero)
+        {
+            var lblNumero = card.Controls.OfType<Label>().FirstOrDefault(1 => Tag?.ToString() == "numero");
+
+            if (lblNumero != null)
+            {
+                lblNumero.Text = numero;
+            }
+        }
+
+        private void SetCarregando (bool carregando)
+        {
+            lblCarregando.Visible = carregando;
+            cardCategorias.Visible = !carregando;
+            cardFilmes.Visible = !carregando;
+            lblUltimosFilmesCadastrados.Visible = carregando;
+            gridUltimosFilmes.Visible = carregando;
         }
     }
 }
