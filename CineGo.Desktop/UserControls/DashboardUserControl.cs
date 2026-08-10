@@ -65,7 +65,7 @@ namespace CineGo.Desktop.UserControls
         }
         private void AtualizarNumeroCard(Guna.UI2.WinForms.Guna2Panel card,string numero)
         {
-            var lblNumero = card.Controls.OfType<Label>().FirstOrDefault(1 => Tag?.ToString() == "numero");
+            var lblNumero = card.Controls.OfType<Label>().FirstOrDefault(Tag => Tag?.ToString() == "numero");
 
             if (lblNumero != null)
             {
