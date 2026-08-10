@@ -80,7 +80,7 @@ namespace CineGo.Desktop.Forms
             catch (HttpRequestException exHttp)
             {
                 ExibirErro($"Não foi possível conectar à API. \nVerifique se a API está em execução erro do sistema: {exHttp.Message}");
-                MessageBox.Show($"❌ Não foi possível conectar à API. \nVerifique se a API está em execução erro do sistema: {exHttp.Message}")
+                MessageBox.Show($"❌ Não foi possível conectar à API. \nVerifique se a API está em execução erro do sistema: {exHttp.Message}");
             }
             catch (Exception ex)
             {

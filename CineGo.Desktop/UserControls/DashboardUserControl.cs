@@ -44,6 +44,10 @@ namespace CineGo.Desktop.UserControls
 
                 var filmes = tarefaFilmes.Result;
                 var categorias = tarefaCategorias.Result;
+            } 
+            catch (Exception ex)
+            {
+
             }
         }
     }
