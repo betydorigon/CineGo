@@ -66,7 +66,7 @@
             // lblSubtitulo
             // 
             lblSubtitulo.AutoSize = true;
-            lblSubtitulo.Location = new Point(41, 51);
+            lblSubtitulo.Location = new Point(41, 49);
             lblSubtitulo.Name = "lblSubtitulo";
             lblSubtitulo.Size = new Size(171, 15);
             lblSubtitulo.TabIndex = 1;
@@ -75,7 +75,7 @@
             // lblCarregando
             // 
             lblCarregando.AutoSize = true;
-            lblCarregando.Location = new Point(41, 81);
+            lblCarregando.Location = new Point(41, 84);
             lblCarregando.Name = "lblCarregando";
             lblCarregando.Size = new Size(150, 15);
             lblCarregando.TabIndex = 2;
@@ -84,7 +84,7 @@
             // lblUltimosFilmesCadastrados
             // 
             lblUltimosFilmesCadastrados.AutoSize = true;
-            lblUltimosFilmesCadastrados.Location = new Point(41, 247);
+            lblUltimosFilmesCadastrados.Location = new Point(41, 239);
             lblUltimosFilmesCadastrados.Name = "lblUltimosFilmesCadastrados";
             lblUltimosFilmesCadastrados.Size = new Size(164, 15);
             lblUltimosFilmesCadastrados.TabIndex = 3;
@@ -94,9 +94,9 @@
             // 
             gridUltimosFilmes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             gridUltimosFilmes.Columns.AddRange(new DataGridViewColumn[] { colId, colClass, colTitle, colCategoryName, colReleaseYear, colCreatedAt });
-            gridUltimosFilmes.Location = new Point(31, 270);
+            gridUltimosFilmes.Location = new Point(31, 263);
             gridUltimosFilmes.Name = "gridUltimosFilmes";
-            gridUltimosFilmes.Size = new Size(646, 150);
+            gridUltimosFilmes.Size = new Size(646, 164);
             gridUltimosFilmes.TabIndex = 4;
             // 
             // cardFilmes
@@ -104,7 +104,7 @@
             cardFilmes.Controls.Add(cardFilmesLblDesc);
             cardFilmes.Controls.Add(cardFilmesLblNumero);
             cardFilmes.Controls.Add(cardFilmesLblTitulo);
-            cardFilmes.Location = new Point(41, 125);
+            cardFilmes.Location = new Point(41, 113);
             cardFilmes.Name = "cardFilmes";
             cardFilmes.Size = new Size(200, 113);
             cardFilmes.TabIndex = 5;
@@ -141,7 +141,7 @@
             cardCategorias.Controls.Add(cardCategoriasLblDesc);
             cardCategorias.Controls.Add(cardCategoriasLblNumero);
             cardCategorias.Controls.Add(cardCatedoriasLblTitulo);
-            cardCategorias.Location = new Point(282, 125);
+            cardCategorias.Location = new Point(282, 113);
             cardCategorias.Name = "cardCategorias";
             cardCategorias.Size = new Size(200, 113);
             cardCategorias.TabIndex = 5;
@@ -175,14 +175,14 @@
             // 
             // pnlCorCategorias
             // 
-            pnlCorCategorias.Location = new Point(282, 125);
+            pnlCorCategorias.Location = new Point(282, 113);
             pnlCorCategorias.Name = "pnlCorCategorias";
             pnlCorCategorias.Size = new Size(200, 13);
             pnlCorCategorias.TabIndex = 5;
             // 
             // pnlCorFilmes
             // 
-            pnlCorFilmes.Location = new Point(41, 125);
+            pnlCorFilmes.Location = new Point(41, 113);
             pnlCorFilmes.Name = "pnlCorFilmes";
             pnlCorFilmes.Size = new Size(200, 13);
             pnlCorFilmes.TabIndex = 5;
