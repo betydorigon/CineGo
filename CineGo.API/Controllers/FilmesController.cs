@@ -89,7 +89,7 @@ public class FilmesController : ControllerBase
     /// </summary>
     [HttpPut("{id}")]
     [Authorize(Roles = "Admin")]
-    public async Task<ActionResult<FilmeDto>> Update(int id, [FromBody] UpdateGameDto dto)
+    public async Task<ActionResult<FilmeDto>> Update(int id, [FromBody] UpdateFilmesDto dto)
     {
         var filme = await _filmeService.UpdateAsync(id, dto);
 
