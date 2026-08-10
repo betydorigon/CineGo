@@ -28,227 +28,246 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            label1 = new Label();
-            panel1 = new Panel();
-            panel2 = new Panel();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            lblTitulo = new Label();
+            pnlToolBar = new Panel();
+            btnAtualizar = new Guna.UI2.WinForms.Guna2Button();
+            btnExcluir = new Guna.UI2.WinForms.Guna2Button();
+            btnEditar = new Guna.UI2.WinForms.Guna2Button();
+            btnNova = new Guna.UI2.WinForms.Guna2Button();
+            pnlForm = new Panel();
+            btnCancelar = new Guna.UI2.WinForms.Guna2Button();
+            btnSalvar = new Guna.UI2.WinForms.Guna2Button();
+            txtNome = new Guna.UI2.WinForms.Guna2TextBox();
+            lblNome = new Label();
+            lblFormTitulo = new Label();
             dataGridView1 = new DataGridView();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            label2 = new Label();
-            label3 = new Label();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            colID = new DataGridViewTextBoxColumn();
+            colName = new DataGridViewTextBoxColumn();
+            colFilmesCount = new DataGridViewTextBoxColumn();
+            pnlToolBar.SuspendLayout();
+            pnlForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lblTitulo
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(22, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(178, 15);
-            label1.TabIndex = 0;
-            label1.Text = "🏷️ Gerenciamento de Categorias";
+            lblTitulo.AutoSize = true;
+            lblTitulo.Location = new Point(22, 21);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(178, 15);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "🏷️ Gerenciamento de Categorias";
             // 
-            // panel1
+            // pnlToolBar
             // 
-            panel1.Controls.Add(guna2Button4);
-            panel1.Controls.Add(guna2Button3);
-            panel1.Controls.Add(guna2Button2);
-            panel1.Controls.Add(guna2Button1);
-            panel1.Location = new Point(22, 51);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(468, 90);
-            panel1.TabIndex = 1;
+            pnlToolBar.Controls.Add(btnAtualizar);
+            pnlToolBar.Controls.Add(btnExcluir);
+            pnlToolBar.Controls.Add(btnEditar);
+            pnlToolBar.Controls.Add(btnNova);
+            pnlToolBar.Location = new Point(22, 51);
+            pnlToolBar.Name = "pnlToolBar";
+            pnlToolBar.Size = new Size(468, 90);
+            pnlToolBar.TabIndex = 1;
             // 
-            // panel2
+            // btnAtualizar
             // 
-            panel2.Controls.Add(guna2Button6);
-            panel2.Controls.Add(guna2Button5);
-            panel2.Controls.Add(guna2TextBox1);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(label2);
-            panel2.Location = new Point(496, 144);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(206, 280);
-            panel2.TabIndex = 1;
+            btnAtualizar.CustomizableEdges = customizableEdges1;
+            btnAtualizar.DisabledState.BorderColor = Color.DarkGray;
+            btnAtualizar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnAtualizar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnAtualizar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAtualizar.Font = new Font("Segoe UI", 9F);
+            btnAtualizar.ForeColor = Color.White;
+            btnAtualizar.Location = new Point(349, 27);
+            btnAtualizar.Name = "btnAtualizar";
+            btnAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnAtualizar.Size = new Size(106, 45);
+            btnAtualizar.TabIndex = 0;
+            btnAtualizar.Text = "🔃 Atualizar";
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.CustomizableEdges = customizableEdges3;
+            btnExcluir.DisabledState.BorderColor = Color.DarkGray;
+            btnExcluir.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnExcluir.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnExcluir.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnExcluir.Font = new Font("Segoe UI", 9F);
+            btnExcluir.ForeColor = Color.White;
+            btnExcluir.Location = new Point(237, 27);
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnExcluir.Size = new Size(106, 45);
+            btnExcluir.TabIndex = 0;
+            btnExcluir.Text = "🗑️ Excluir";
+            // 
+            // btnEditar
+            // 
+            btnEditar.CustomizableEdges = customizableEdges5;
+            btnEditar.DisabledState.BorderColor = Color.DarkGray;
+            btnEditar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnEditar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnEditar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnEditar.Font = new Font("Segoe UI", 9F);
+            btnEditar.ForeColor = Color.White;
+            btnEditar.Location = new Point(125, 27);
+            btnEditar.Name = "btnEditar";
+            btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnEditar.Size = new Size(106, 45);
+            btnEditar.TabIndex = 0;
+            btnEditar.Text = "✏️ Editar";
+            // 
+            // btnNova
+            // 
+            btnNova.CustomizableEdges = customizableEdges7;
+            btnNova.DisabledState.BorderColor = Color.DarkGray;
+            btnNova.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnNova.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnNova.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnNova.Font = new Font("Segoe UI", 9F);
+            btnNova.ForeColor = Color.White;
+            btnNova.Location = new Point(13, 27);
+            btnNova.Name = "btnNova";
+            btnNova.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnNova.Size = new Size(106, 45);
+            btnNova.TabIndex = 0;
+            btnNova.Text = "+ Nova Categoria";
+            // 
+            // pnlForm
+            // 
+            pnlForm.Controls.Add(btnCancelar);
+            pnlForm.Controls.Add(btnSalvar);
+            pnlForm.Controls.Add(txtNome);
+            pnlForm.Controls.Add(lblNome);
+            pnlForm.Controls.Add(lblFormTitulo);
+            pnlForm.Location = new Point(496, 144);
+            pnlForm.Name = "pnlForm";
+            pnlForm.Size = new Size(206, 280);
+            pnlForm.TabIndex = 1;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.BorderRadius = 5;
+            btnCancelar.CustomizableEdges = customizableEdges9;
+            btnCancelar.DisabledState.BorderColor = Color.DarkGray;
+            btnCancelar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnCancelar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnCancelar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnCancelar.Font = new Font("Segoe UI", 9F);
+            btnCancelar.ForeColor = Color.White;
+            btnCancelar.Location = new Point(103, 144);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            btnCancelar.Size = new Size(90, 34);
+            btnCancelar.TabIndex = 2;
+            btnCancelar.Text = "❌Cancelar";
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.BackColor = Color.Transparent;
+            btnSalvar.BorderRadius = 5;
+            btnSalvar.CustomizableEdges = customizableEdges11;
+            btnSalvar.DisabledState.BorderColor = Color.DarkGray;
+            btnSalvar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSalvar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSalvar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSalvar.Font = new Font("Segoe UI", 9F);
+            btnSalvar.ForeColor = Color.White;
+            btnSalvar.Location = new Point(11, 144);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            btnSalvar.Size = new Size(90, 34);
+            btnSalvar.TabIndex = 2;
+            btnSalvar.Text = "🗃️ Salvar";
+            // 
+            // txtNome
+            // 
+            txtNome.CustomizableEdges = customizableEdges13;
+            txtNome.DefaultText = "";
+            txtNome.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtNome.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtNome.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtNome.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtNome.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtNome.Font = new Font("Segoe UI", 9F);
+            txtNome.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtNome.Location = new Point(12, 97);
+            txtNome.Name = "txtNome";
+            txtNome.PlaceholderText = "Ex: Suspense, Ação...";
+            txtNome.SelectedText = "";
+            txtNome.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtNome.Size = new Size(180, 36);
+            txtNome.TabIndex = 1;
+            // 
+            // lblNome
+            // 
+            lblNome.AutoSize = true;
+            lblNome.Location = new Point(27, 68);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(111, 15);
+            lblNome.TabIndex = 0;
+            lblNome.Text = "Nome da categoria:";
+            // 
+            // lblFormTitulo
+            // 
+            lblFormTitulo.AutoSize = true;
+            lblFormTitulo.Location = new Point(27, 30);
+            lblFormTitulo.Name = "lblFormTitulo";
+            lblFormTitulo.Size = new Size(89, 15);
+            lblFormTitulo.TabIndex = 0;
+            lblFormTitulo.Text = "Nova Categoria";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colID, colName, colFilmesCount });
             dataGridView1.Location = new Point(22, 147);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(468, 277);
             dataGridView1.TabIndex = 2;
             // 
-            // guna2Button1
+            // colID
             // 
-            guna2Button1.CustomizableEdges = customizableEdges7;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.Font = new Font("Segoe UI", 9F);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(13, 27);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2Button1.Size = new Size(106, 45);
-            guna2Button1.TabIndex = 0;
-            guna2Button1.Text = "+ Nova Categoria";
+            colID.HeaderText = "ID";
+            colID.Name = "colID";
             // 
-            // guna2Button2
+            // colName
             // 
-            guna2Button2.CustomizableEdges = customizableEdges5;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.Font = new Font("Segoe UI", 9F);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(125, 27);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2Button2.Size = new Size(106, 45);
-            guna2Button2.TabIndex = 0;
-            guna2Button2.Text = "✏️ Editar";
+            colName.HeaderText = "Nome da categoria";
+            colName.Name = "colName";
             // 
-            // guna2Button3
+            // colFilmesCount
             // 
-            guna2Button3.CustomizableEdges = customizableEdges3;
-            guna2Button3.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button3.Font = new Font("Segoe UI", 9F);
-            guna2Button3.ForeColor = Color.White;
-            guna2Button3.Location = new Point(237, 27);
-            guna2Button3.Name = "guna2Button3";
-            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button3.Size = new Size(106, 45);
-            guna2Button3.TabIndex = 0;
-            guna2Button3.Text = "🗑️ Excluir";
-            // 
-            // guna2Button4
-            // 
-            guna2Button4.CustomizableEdges = customizableEdges1;
-            guna2Button4.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button4.Font = new Font("Segoe UI", 9F);
-            guna2Button4.ForeColor = Color.White;
-            guna2Button4.Location = new Point(349, 27);
-            guna2Button4.Name = "guna2Button4";
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Button4.Size = new Size(106, 45);
-            guna2Button4.TabIndex = 0;
-            guna2Button4.Text = "🔃 Atualizar";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(27, 30);
-            label2.Name = "label2";
-            label2.Size = new Size(89, 15);
-            label2.TabIndex = 0;
-            label2.Text = "Nova Categoria";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(27, 68);
-            label3.Name = "label3";
-            label3.Size = new Size(107, 15);
-            label3.TabIndex = 0;
-            label3.Text = "Nime da categoria:";
-            // 
-            // guna2TextBox1
-            // 
-            guna2TextBox1.CustomizableEdges = customizableEdges13;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(12, 97);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PlaceholderText = "Ex: Suspense, Ação...";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2TextBox1.Size = new Size(180, 36);
-            guna2TextBox1.TabIndex = 1;
-            // 
-            // guna2Button5
-            // 
-            guna2Button5.BackColor = Color.Transparent;
-            guna2Button5.BorderRadius = 5;
-            guna2Button5.CustomizableEdges = customizableEdges11;
-            guna2Button5.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button5.Font = new Font("Segoe UI", 9F);
-            guna2Button5.ForeColor = Color.White;
-            guna2Button5.Location = new Point(11, 144);
-            guna2Button5.Name = "guna2Button5";
-            guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button5.Size = new Size(90, 34);
-            guna2Button5.TabIndex = 2;
-            guna2Button5.Text = "🗃️ Salvar";
-            // 
-            // guna2Button6
-            // 
-            guna2Button6.BorderRadius = 5;
-            guna2Button6.CustomizableEdges = customizableEdges9;
-            guna2Button6.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button6.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button6.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button6.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button6.Font = new Font("Segoe UI", 9F);
-            guna2Button6.ForeColor = Color.White;
-            guna2Button6.Location = new Point(103, 144);
-            guna2Button6.Name = "guna2Button6";
-            guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Button6.Size = new Size(90, 34);
-            guna2Button6.TabIndex = 2;
-            guna2Button6.Text = "❌Cancelar";
+            colFilmesCount.HeaderText = "Total de filmes";
+            colFilmesCount.Name = "colFilmesCount";
             // 
             // CategoriasUserControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(dataGridView1);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            Controls.Add(label1);
+            Controls.Add(pnlForm);
+            Controls.Add(pnlToolBar);
+            Controls.Add(lblTitulo);
             Name = "CategoriasUserControl";
             Size = new Size(711, 438);
-            panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
+            pnlToolBar.ResumeLayout(false);
+            pnlForm.ResumeLayout(false);
+            pnlForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -256,18 +275,21 @@
 
         #endregion
 
-        private Label label1;
-        private Panel panel1;
-        private Panel panel2;
+        private Label lblTitulo;
+        private Panel pnlToolBar;
+        private Panel pnlForm;
+        private Guna.UI2.WinForms.Guna2Button btnAtualizar;
+        private Guna.UI2.WinForms.Guna2Button btnExcluir;
+        private Guna.UI2.WinForms.Guna2Button btnEditar;
+        private Guna.UI2.WinForms.Guna2Button btnNova;
+        private Guna.UI2.WinForms.Guna2Button btnCancelar;
+        private Guna.UI2.WinForms.Guna2Button btnSalvar;
+        private Guna.UI2.WinForms.Guna2TextBox txtNome;
+        private Label lblNome;
+        private Label lblFormTitulo;
         private DataGridView dataGridView1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Label label3;
-        private Label label2;
+        private DataGridViewTextBoxColumn colID;
+        private DataGridViewTextBoxColumn colName;
+        private DataGridViewTextBoxColumn colFilmesCount;
     }
 }
