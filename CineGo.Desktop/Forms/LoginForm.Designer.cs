@@ -247,6 +247,7 @@
             btnFechar.Size = new Size(30, 30);
             btnFechar.TabIndex = 12;
             btnFechar.Text = "X";
+            btnFechar.Click += btnFechar_Click;
             // 
             // lblCarregando
             // 
