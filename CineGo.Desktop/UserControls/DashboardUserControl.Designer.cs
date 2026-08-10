@@ -34,17 +34,17 @@
             lblUltimosFilmesCadastrados = new Label();
             gridUltimosFilmes = new DataGridView();
             cardFilmes = new Panel();
+            cardFilmesLblDesc = new Label();
+            cardFilmesLblNumero = new Label();
+            cardFilmesLblTitulo = new Label();
             cardCategorias = new Panel();
+            cardCategoriasLblDesc = new Label();
+            cardCategoriasLblNumero = new Label();
+            cardCatedoriasLblTitulo = new Label();
             pnlCorCategorias = new Panel();
             pnlCorFilmes = new Panel();
-            cardFilmesLblTitulo = new Label();
-            cardFilmesLblNumero = new Label();
-            cardFilmesLblDesc = new Label();
-            cardCatedoriasLblTitulo = new Label();
-            cardCategoriasLblNumero = new Label();
-            cardCategoriasLblDesc = new Label();
             colId = new DataGridViewTextBoxColumn();
-            ColClass = new DataGridViewTextBoxColumn();
+            colClass = new DataGridViewTextBoxColumn();
             colTitle = new DataGridViewTextBoxColumn();
             colCategoryName = new DataGridViewTextBoxColumn();
             colReleaseYear = new DataGridViewTextBoxColumn();
@@ -93,7 +93,7 @@
             // gridUltimosFilmes
             // 
             gridUltimosFilmes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gridUltimosFilmes.Columns.AddRange(new DataGridViewColumn[] { colId, ColClass, colTitle, colCategoryName, colReleaseYear, colCreatedAt });
+            gridUltimosFilmes.Columns.AddRange(new DataGridViewColumn[] { colId, colClass, colTitle, colCategoryName, colReleaseYear, colCreatedAt });
             gridUltimosFilmes.Location = new Point(31, 270);
             gridUltimosFilmes.Name = "gridUltimosFilmes";
             gridUltimosFilmes.Size = new Size(646, 150);
@@ -109,6 +109,33 @@
             cardFilmes.Size = new Size(200, 113);
             cardFilmes.TabIndex = 5;
             // 
+            // cardFilmesLblDesc
+            // 
+            cardFilmesLblDesc.AutoSize = true;
+            cardFilmesLblDesc.Location = new Point(15, 85);
+            cardFilmesLblDesc.Name = "cardFilmesLblDesc";
+            cardFilmesLblDesc.Size = new Size(150, 15);
+            cardFilmesLblDesc.TabIndex = 2;
+            cardFilmesLblDesc.Text = "Total de filmes cadastrados";
+            // 
+            // cardFilmesLblNumero
+            // 
+            cardFilmesLblNumero.AutoSize = true;
+            cardFilmesLblNumero.Location = new Point(15, 54);
+            cardFilmesLblNumero.Name = "cardFilmesLblNumero";
+            cardFilmesLblNumero.Size = new Size(13, 15);
+            cardFilmesLblNumero.TabIndex = 1;
+            cardFilmesLblNumero.Text = "0";
+            // 
+            // cardFilmesLblTitulo
+            // 
+            cardFilmesLblTitulo.AutoSize = true;
+            cardFilmesLblTitulo.Location = new Point(15, 23);
+            cardFilmesLblTitulo.Name = "cardFilmesLblTitulo";
+            cardFilmesLblTitulo.Size = new Size(56, 15);
+            cardFilmesLblTitulo.TabIndex = 0;
+            cardFilmesLblTitulo.Text = "🎬 Filmes";
+            // 
             // cardCategorias
             // 
             cardCategorias.Controls.Add(cardCategoriasLblDesc);
@@ -118,6 +145,33 @@
             cardCategorias.Name = "cardCategorias";
             cardCategorias.Size = new Size(200, 113);
             cardCategorias.TabIndex = 5;
+            // 
+            // cardCategoriasLblDesc
+            // 
+            cardCategoriasLblDesc.AutoSize = true;
+            cardCategoriasLblDesc.Location = new Point(16, 85);
+            cardCategoriasLblDesc.Name = "cardCategoriasLblDesc";
+            cardCategoriasLblDesc.Size = new Size(171, 15);
+            cardCategoriasLblDesc.TabIndex = 2;
+            cardCategoriasLblDesc.Text = "Total de categorias cadastradas";
+            // 
+            // cardCategoriasLblNumero
+            // 
+            cardCategoriasLblNumero.AutoSize = true;
+            cardCategoriasLblNumero.Location = new Point(16, 54);
+            cardCategoriasLblNumero.Name = "cardCategoriasLblNumero";
+            cardCategoriasLblNumero.Size = new Size(13, 15);
+            cardCategoriasLblNumero.TabIndex = 1;
+            cardCategoriasLblNumero.Text = "0";
+            // 
+            // cardCatedoriasLblTitulo
+            // 
+            cardCatedoriasLblTitulo.AutoSize = true;
+            cardCatedoriasLblTitulo.Location = new Point(16, 23);
+            cardCatedoriasLblTitulo.Name = "cardCatedoriasLblTitulo";
+            cardCatedoriasLblTitulo.Size = new Size(78, 15);
+            cardCatedoriasLblTitulo.TabIndex = 0;
+            cardCatedoriasLblTitulo.Text = "🏷️ Categorias";
             // 
             // pnlCorCategorias
             // 
@@ -133,69 +187,15 @@
             pnlCorFilmes.Size = new Size(200, 13);
             pnlCorFilmes.TabIndex = 5;
             // 
-            // cardFilmesLblTitulo
-            // 
-            cardFilmesLblTitulo.AutoSize = true;
-            cardFilmesLblTitulo.Location = new Point(15, 23);
-            cardFilmesLblTitulo.Name = "cardFilmesLblTitulo";
-            cardFilmesLblTitulo.Size = new Size(56, 15);
-            cardFilmesLblTitulo.TabIndex = 0;
-            cardFilmesLblTitulo.Text = "🎬 Filmes";
-            // 
-            // cardFilmesLblNumero
-            // 
-            cardFilmesLblNumero.AutoSize = true;
-            cardFilmesLblNumero.Location = new Point(15, 54);
-            cardFilmesLblNumero.Name = "cardFilmesLblNumero";
-            cardFilmesLblNumero.Size = new Size(13, 15);
-            cardFilmesLblNumero.TabIndex = 1;
-            cardFilmesLblNumero.Text = "0";
-            // 
-            // cardFilmesLblDesc
-            // 
-            cardFilmesLblDesc.AutoSize = true;
-            cardFilmesLblDesc.Location = new Point(15, 85);
-            cardFilmesLblDesc.Name = "cardFilmesLblDesc";
-            cardFilmesLblDesc.Size = new Size(150, 15);
-            cardFilmesLblDesc.TabIndex = 2;
-            cardFilmesLblDesc.Text = "Total de filmes cadastrados";
-            // 
-            // cardCatedoriasLblTitulo
-            // 
-            cardCatedoriasLblTitulo.AutoSize = true;
-            cardCatedoriasLblTitulo.Location = new Point(16, 23);
-            cardCatedoriasLblTitulo.Name = "cardCatedoriasLblTitulo";
-            cardCatedoriasLblTitulo.Size = new Size(78, 15);
-            cardCatedoriasLblTitulo.TabIndex = 0;
-            cardCatedoriasLblTitulo.Text = "🏷️ Categorias";
-            // 
-            // cardCategoriasLblNumero
-            // 
-            cardCategoriasLblNumero.AutoSize = true;
-            cardCategoriasLblNumero.Location = new Point(16, 54);
-            cardCategoriasLblNumero.Name = "cardCategoriasLblNumero";
-            cardCategoriasLblNumero.Size = new Size(13, 15);
-            cardCategoriasLblNumero.TabIndex = 1;
-            cardCategoriasLblNumero.Text = "0";
-            // 
-            // cardCategoriasLblDesc
-            // 
-            cardCategoriasLblDesc.AutoSize = true;
-            cardCategoriasLblDesc.Location = new Point(16, 85);
-            cardCategoriasLblDesc.Name = "cardCategoriasLblDesc";
-            cardCategoriasLblDesc.Size = new Size(171, 15);
-            cardCategoriasLblDesc.TabIndex = 2;
-            cardCategoriasLblDesc.Text = "Total de categorias cadastradas";
-            // 
             // colId
             // 
             colId.HeaderText = "ID";
             colId.Name = "colId";
             // 
-            // ColClass
+            // colClass
             // 
-            ColClass.HeaderText = "Classificação";
-            ColClass.Name = "ColClass";
+            colClass.HeaderText = "Classificação";
+            colClass.Name = "colClass";
             // 
             // colTitle
             // 
@@ -259,7 +259,7 @@
         private Panel pnlCorCategorias;
         private Panel pnlCorFilmes;
         private DataGridViewTextBoxColumn colId;
-        private DataGridViewTextBoxColumn ColClass;
+        private DataGridViewTextBoxColumn colClass;
         private DataGridViewTextBoxColumn colTitle;
         private DataGridViewTextBoxColumn colCategoryName;
         private DataGridViewTextBoxColumn colReleaseYear;

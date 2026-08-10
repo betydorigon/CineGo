@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CineGo.Desktop.DTOs
 {
-    public  class FilmeResponseDtos
+    public  class FilmeResponseDto
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
