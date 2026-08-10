@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblTituloBemVindo = new Label();
             lblTextoFacaLogin = new Label();
             lblEmail = new Label();
@@ -103,7 +103,7 @@
             // 
             // txtEmail
             // 
-            txtEmail.CustomizableEdges = customizableEdges11;
+            txtEmail.CustomizableEdges = customizableEdges1;
             txtEmail.DefaultText = "";
             txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtEmail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -116,13 +116,14 @@
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "";
             txtEmail.SelectedText = "";
-            txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtEmail.Size = new Size(200, 36);
             txtEmail.TabIndex = 6;
+            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // txtSenha
             // 
-            txtSenha.CustomizableEdges = customizableEdges13;
+            txtSenha.CustomizableEdges = customizableEdges3;
             txtSenha.DefaultText = "";
             txtSenha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtSenha.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -135,13 +136,13 @@
             txtSenha.Name = "txtSenha";
             txtSenha.PlaceholderText = "";
             txtSenha.SelectedText = "";
-            txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtSenha.Size = new Size(200, 36);
             txtSenha.TabIndex = 7;
             // 
             // txtConfirmarSenha
             // 
-            txtConfirmarSenha.CustomizableEdges = customizableEdges15;
+            txtConfirmarSenha.CustomizableEdges = customizableEdges5;
             txtConfirmarSenha.DefaultText = "";
             txtConfirmarSenha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtConfirmarSenha.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -154,13 +155,13 @@
             txtConfirmarSenha.Name = "txtConfirmarSenha";
             txtConfirmarSenha.PlaceholderText = "";
             txtConfirmarSenha.SelectedText = "";
-            txtConfirmarSenha.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtConfirmarSenha.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtConfirmarSenha.Size = new Size(200, 36);
             txtConfirmarSenha.TabIndex = 8;
             // 
             // btnEntrar
             // 
-            btnEntrar.CustomizableEdges = customizableEdges17;
+            btnEntrar.CustomizableEdges = customizableEdges7;
             btnEntrar.DisabledState.BorderColor = Color.DarkGray;
             btnEntrar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnEntrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -169,18 +170,19 @@
             btnEntrar.ForeColor = Color.White;
             btnEntrar.Location = new Point(90, 337);
             btnEntrar.Name = "btnEntrar";
-            btnEntrar.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnEntrar.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnEntrar.Size = new Size(229, 45);
             btnEntrar.TabIndex = 9;
             btnEntrar.Text = "Entrar";
+            btnEntrar.Click += btnEntrar_Click;
             // 
             // pbLogo
             // 
-            pbLogo.CustomizableEdges = customizableEdges19;
+            pbLogo.CustomizableEdges = customizableEdges9;
             pbLogo.ImageRotate = 0F;
             pbLogo.Location = new Point(19, 12);
             pbLogo.Name = "pbLogo";
-            pbLogo.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            pbLogo.ShadowDecoration.CustomizableEdges = customizableEdges10;
             pbLogo.Size = new Size(141, 90);
             pbLogo.TabIndex = 10;
             pbLogo.TabStop = false;
@@ -250,6 +252,7 @@
             Controls.Add(lblTituloBemVindo);
             Name = "LoginForm";
             Text = "LoginForm";
+            Load += LoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
