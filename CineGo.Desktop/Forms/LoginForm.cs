@@ -32,21 +32,7 @@ namespace CineGo.Desktop.Forms
 
         }
 
-        private void txtEmail_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter) txtSenha.Focus();
-        }
-
-        private void txtSenha_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter) btnEntrar_Click(sender, e);
-
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private async Task btnEntrar_Click(object sender, EventArgs e)
         {
