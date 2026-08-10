@@ -12,8 +12,8 @@ namespace CineGo.domain
         Task<IEnumerable<Filmes>> GetFeaturedAsync();
         Task<IEnumerable<Filmes>> GetByCategoryAsync(int categoryId);
         Task AddAsync(Filmes filme);
-        Task UpdateSync(Filmes filme);
-        Task DeleteSync(int id);
+        Task UpdateAsync(Filmes filme);
+        Task DeleteAsync(int id);
         Task<int> CountAsync();
 
 

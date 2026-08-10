@@ -54,22 +54,21 @@ namespace CineGo.Infrastructure.Repositories
                 .ToListAsync();
         }
 
-
-        public async Task AddASync(Filmes filme)
+        public async Task AddAsync(Filmes filme)
         {
             await _context.Filmes.AddAsync(filme);
             await _context.SaveChangesAsync();
         }
 
         // Atualiza um filme existente
-        public async Task UpdateSync(Filmes filme)
+        public async Task UpdateAsync(Filmes filme)
         {
             _context.Filmes.Update(filme);
             await _context.SaveChangesAsync();
         }
 
         // Remove um filme por id
-        public async Task DeleteSync(int id)
+        public async Task DeleteAsync(int id)
         {
             var filme = await _context.Filmes.FindAsync(id);
             if (filme is null) return;
