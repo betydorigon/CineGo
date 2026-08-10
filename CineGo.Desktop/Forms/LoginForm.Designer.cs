@@ -38,6 +38,7 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblTituloBemVindo = new Label();
             lblTextoFacaLogin = new Label();
             lblEmail = new Label();
@@ -53,15 +54,17 @@
             lblProblemasEmAcessar = new Label();
             lblAPI = new Label();
             lblErro = new Label();
+            btnFechar = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
             SuspendLayout();
             // 
             // lblTituloBemVindo
             // 
             lblTituloBemVindo.AutoSize = true;
+            lblTituloBemVindo.Font = new Font("Yu Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTituloBemVindo.Location = new Point(181, 34);
             lblTituloBemVindo.Name = "lblTituloBemVindo";
-            lblTituloBemVindo.Size = new Size(69, 15);
+            lblTituloBemVindo.Size = new Size(150, 31);
             lblTituloBemVindo.TabIndex = 1;
             lblTituloBemVindo.Text = "Bem-vindo!";
             // 
@@ -119,7 +122,6 @@
             txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtEmail.Size = new Size(200, 36);
             txtEmail.TabIndex = 6;
-            txtEmail.TextChanged += txtEmail_TextChanged;
             // 
             // txtSenha
             // 
@@ -174,7 +176,6 @@
             btnEntrar.Size = new Size(229, 45);
             btnEntrar.TabIndex = 9;
             btnEntrar.Text = "Entrar";
-            btnEntrar.Click += btnEntrar_Click;
             // 
             // pbLogo
             // 
@@ -230,11 +231,28 @@
             lblErro.TabIndex = 5;
             lblErro.Text = "Erro: ...";
             // 
+            // btnFechar
+            // 
+            btnFechar.DisabledState.BorderColor = Color.DarkGray;
+            btnFechar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnFechar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnFechar.Font = new Font("Segoe UI", 9F);
+            btnFechar.ForeColor = Color.White;
+            btnFechar.Location = new Point(360, 12);
+            btnFechar.Name = "btnFechar";
+            btnFechar.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            btnFechar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            btnFechar.Size = new Size(30, 30);
+            btnFechar.TabIndex = 12;
+            btnFechar.Text = "X";
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(406, 481);
+            Controls.Add(btnFechar);
             Controls.Add(pnlSeparador2);
             Controls.Add(pnlSeparador);
             Controls.Add(pbLogo);
@@ -252,7 +270,6 @@
             Controls.Add(lblTituloBemVindo);
             Name = "LoginForm";
             Text = "LoginForm";
-            Load += LoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -274,5 +291,6 @@
         private Label lblProblemasEmAcessar;
         private Label lblAPI;
         private Label lblErro;
+        private Guna.UI2.WinForms.Guna2CircleButton btnFechar;
     }
 }
