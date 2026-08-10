@@ -7,7 +7,7 @@ namespace CineGo.Infrastructure.Identity
 {
     internal static class SeedData
     {
-        public static async Task InitializeAsync(IServiceProvider serviceProvider)
+        public static async Task SeedAsync(IServiceProvider serviceProvider)
         {
             using var scope = serviceProvider.CreateScope();
             var services = scope.ServiceProvider;
