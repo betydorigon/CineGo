@@ -55,6 +55,7 @@
             lblAPI = new Label();
             lblErro = new Label();
             btnFechar = new Guna.UI2.WinForms.Guna2CircleButton();
+            lblCarregando = new Label();
             ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
             SuspendLayout();
             // 
@@ -80,7 +81,7 @@
             // lblEmail
             // 
             lblEmail.AutoSize = true;
-            lblEmail.Location = new Point(19, 136);
+            lblEmail.Location = new Point(19, 129);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(36, 15);
             lblEmail.TabIndex = 3;
@@ -89,7 +90,7 @@
             // lblSenha
             // 
             lblSenha.AutoSize = true;
-            lblSenha.Location = new Point(19, 201);
+            lblSenha.Location = new Point(19, 194);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(39, 15);
             lblSenha.TabIndex = 4;
@@ -98,7 +99,7 @@
             // lblConfirmarSenha
             // 
             lblConfirmarSenha.AutoSize = true;
-            lblConfirmarSenha.Location = new Point(19, 265);
+            lblConfirmarSenha.Location = new Point(19, 258);
             lblConfirmarSenha.Name = "lblConfirmarSenha";
             lblConfirmarSenha.Size = new Size(95, 15);
             lblConfirmarSenha.TabIndex = 5;
@@ -115,12 +116,12 @@
             txtEmail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEmail.Font = new Font("Segoe UI", 9F);
             txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtEmail.Location = new Point(19, 157);
+            txtEmail.Location = new Point(19, 150);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "";
             txtEmail.SelectedText = "";
             txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            txtEmail.Size = new Size(200, 36);
+            txtEmail.Size = new Size(371, 36);
             txtEmail.TabIndex = 6;
             // 
             // txtSenha
@@ -134,12 +135,12 @@
             txtSenha.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSenha.Font = new Font("Segoe UI", 9F);
             txtSenha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtSenha.Location = new Point(19, 222);
+            txtSenha.Location = new Point(19, 215);
             txtSenha.Name = "txtSenha";
             txtSenha.PlaceholderText = "";
             txtSenha.SelectedText = "";
             txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            txtSenha.Size = new Size(200, 36);
+            txtSenha.Size = new Size(371, 36);
             txtSenha.TabIndex = 7;
             // 
             // txtConfirmarSenha
@@ -153,12 +154,12 @@
             txtConfirmarSenha.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             txtConfirmarSenha.Font = new Font("Segoe UI", 9F);
             txtConfirmarSenha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtConfirmarSenha.Location = new Point(19, 285);
+            txtConfirmarSenha.Location = new Point(19, 278);
             txtConfirmarSenha.Name = "txtConfirmarSenha";
             txtConfirmarSenha.PlaceholderText = "";
             txtConfirmarSenha.SelectedText = "";
             txtConfirmarSenha.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtConfirmarSenha.Size = new Size(200, 36);
+            txtConfirmarSenha.Size = new Size(371, 36);
             txtConfirmarSenha.TabIndex = 8;
             // 
             // btnEntrar
@@ -170,7 +171,7 @@
             btnEntrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnEntrar.Font = new Font("Segoe UI", 9F);
             btnEntrar.ForeColor = Color.White;
-            btnEntrar.Location = new Point(90, 337);
+            btnEntrar.Location = new Point(90, 328);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnEntrar.Size = new Size(229, 45);
@@ -239,7 +240,7 @@
             btnFechar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnFechar.Font = new Font("Segoe UI", 9F);
             btnFechar.ForeColor = Color.White;
-            btnFechar.Location = new Point(360, 12);
+            btnFechar.Location = new Point(364, 12);
             btnFechar.Name = "btnFechar";
             btnFechar.ShadowDecoration.CustomizableEdges = customizableEdges11;
             btnFechar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -247,11 +248,21 @@
             btnFechar.TabIndex = 12;
             btnFechar.Text = "X";
             // 
+            // lblCarregando
+            // 
+            lblCarregando.AutoSize = true;
+            lblCarregando.Location = new Point(160, 379);
+            lblCarregando.Name = "lblCarregando";
+            lblCarregando.Size = new Size(88, 15);
+            lblCarregando.TabIndex = 13;
+            lblCarregando.Text = "Autenticando...";
+            // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(406, 481);
+            Controls.Add(lblCarregando);
             Controls.Add(btnFechar);
             Controls.Add(pnlSeparador2);
             Controls.Add(pnlSeparador);
@@ -268,6 +279,7 @@
             Controls.Add(lblEmail);
             Controls.Add(lblTextoFacaLogin);
             Controls.Add(lblTituloBemVindo);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "LoginForm";
             Text = "LoginForm";
             ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
@@ -292,5 +304,6 @@
         private Label lblAPI;
         private Label lblErro;
         private Guna.UI2.WinForms.Guna2CircleButton btnFechar;
+        private Label lblCarregando;
     }
 }

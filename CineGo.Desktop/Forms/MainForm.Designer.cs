@@ -28,45 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges23 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges24 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges27 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges28 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges21 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges22 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges25 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges26 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pnlUsuario = new Panel();
             pnlHeader = new Panel();
-            panel3 = new Panel();
+            pnlLogo = new Panel();
             pnlConteudo = new Panel();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            lblUsuario = new Label();
+            lblPerfil = new Label();
+            lblTitulo = new Label();
+            lblSiderbarLogo = new Label();
+            lblSiderbarSub = new Label();
+            lblSessao = new Label();
+            btnDashboard = new Guna.UI2.WinForms.Guna2Button();
             pnlSidebar = new Panel();
-            guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            btnFilmes = new Guna.UI2.WinForms.Guna2Button();
+            btnCategoria = new Guna.UI2.WinForms.Guna2Button();
+            btnUsuarios = new Guna.UI2.WinForms.Guna2Button();
+            btnMeuPerfil = new Guna.UI2.WinForms.Guna2Button();
+            btnLogout = new Guna.UI2.WinForms.Guna2Button();
             pnlUsuario.SuspendLayout();
             pnlHeader.SuspendLayout();
-            panel3.SuspendLayout();
+            pnlLogo.SuspendLayout();
             pnlSidebar.SuspendLayout();
             SuspendLayout();
             // 
             // pnlUsuario
             // 
-            pnlUsuario.Controls.Add(label2);
-            pnlUsuario.Controls.Add(label1);
+            pnlUsuario.Controls.Add(lblPerfil);
+            pnlUsuario.Controls.Add(lblUsuario);
             pnlUsuario.Location = new Point(0, 0);
             pnlUsuario.Name = "pnlUsuario";
             pnlUsuario.Size = new Size(200, 100);
@@ -74,210 +74,211 @@
             // 
             // pnlHeader
             // 
-            pnlHeader.Controls.Add(guna2Button6);
-            pnlHeader.Controls.Add(label3);
+            pnlHeader.Controls.Add(btnLogout);
+            pnlHeader.Controls.Add(lblTitulo);
             pnlHeader.Location = new Point(201, 0);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(706, 100);
+            pnlHeader.Size = new Size(729, 100);
             pnlHeader.TabIndex = 0;
             // 
-            // panel3
+            // pnlLogo
             // 
-            panel3.Controls.Add(label5);
-            panel3.Controls.Add(label4);
-            panel3.Location = new Point(0, 100);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(200, 74);
-            panel3.TabIndex = 0;
+            pnlLogo.Controls.Add(lblSiderbarSub);
+            pnlLogo.Controls.Add(lblSiderbarLogo);
+            pnlLogo.Location = new Point(0, 100);
+            pnlLogo.Name = "pnlLogo";
+            pnlLogo.Size = new Size(200, 74);
+            pnlLogo.TabIndex = 0;
             // 
             // pnlConteudo
             // 
             pnlConteudo.Location = new Point(206, 106);
             pnlConteudo.Name = "pnlConteudo";
-            pnlConteudo.Size = new Size(689, 417);
+            pnlConteudo.Size = new Size(711, 438);
             pnlConteudo.TabIndex = 0;
             // 
-            // label1
+            // lblUsuario
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(27, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(59, 15);
-            label1.TabIndex = 0;
-            label1.Text = "👤Usuário";
+            lblUsuario.AutoSize = true;
+            lblUsuario.Location = new Point(27, 21);
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(59, 15);
+            lblUsuario.TabIndex = 0;
+            lblUsuario.Text = "👤Usuário";
             // 
-            // label2
+            // lblPerfil
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(27, 61);
-            label2.Name = "label2";
-            label2.Size = new Size(34, 15);
-            label2.TabIndex = 0;
-            label2.Text = "perfil";
+            lblPerfil.AutoSize = true;
+            lblPerfil.Location = new Point(27, 61);
+            lblPerfil.Name = "lblPerfil";
+            lblPerfil.Size = new Size(34, 15);
+            lblPerfil.TabIndex = 0;
+            lblPerfil.Text = "perfil";
             // 
-            // label3
+            // lblTitulo
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(45, 21);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 15);
-            label3.TabIndex = 0;
-            label3.Text = "label1";
+            lblTitulo.AutoSize = true;
+            lblTitulo.Location = new Point(42, 41);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(46, 15);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "CineGo";
             // 
-            // label4
+            // lblSiderbarLogo
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(27, 16);
-            label4.Name = "label4";
-            label4.Size = new Size(46, 15);
-            label4.TabIndex = 0;
-            label4.Text = "CineGo";
+            lblSiderbarLogo.AutoSize = true;
+            lblSiderbarLogo.Location = new Point(27, 16);
+            lblSiderbarLogo.Name = "lblSiderbarLogo";
+            lblSiderbarLogo.Size = new Size(46, 15);
+            lblSiderbarLogo.TabIndex = 0;
+            lblSiderbarLogo.Text = "CineGo";
             // 
-            // label5
+            // lblSiderbarSub
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(27, 45);
-            label5.Name = "label5";
-            label5.Size = new Size(111, 15);
-            label5.TabIndex = 0;
-            label5.Text = "Plataforma Desktop";
+            lblSiderbarSub.AutoSize = true;
+            lblSiderbarSub.Location = new Point(27, 45);
+            lblSiderbarSub.Name = "lblSiderbarSub";
+            lblSiderbarSub.Size = new Size(111, 15);
+            lblSiderbarSub.TabIndex = 0;
+            lblSiderbarSub.Text = "Plataforma Desktop";
             // 
-            // label6
+            // lblSessao
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(12, 334);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 15);
-            label6.TabIndex = 0;
-            label6.Text = "label1";
+            lblSessao.AutoSize = true;
+            lblSessao.Location = new Point(12, 355);
+            lblSessao.Name = "lblSessao";
+            lblSessao.Size = new Size(16, 15);
+            lblSessao.TabIndex = 0;
+            lblSessao.Text = "...";
             // 
-            // guna2Button1
+            // btnDashboard
             // 
-            guna2Button1.CustomizableEdges = customizableEdges23;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.Font = new Font("Segoe UI", 9F);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(0, 0);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            guna2Button1.Size = new Size(200, 45);
-            guna2Button1.TabIndex = 1;
-            guna2Button1.Text = "guna2Button1";
+            btnDashboard.CustomizableEdges = customizableEdges27;
+            btnDashboard.DisabledState.BorderColor = Color.DarkGray;
+            btnDashboard.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnDashboard.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnDashboard.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnDashboard.Font = new Font("Segoe UI", 9F);
+            btnDashboard.ForeColor = Color.White;
+            btnDashboard.Location = new Point(0, 0);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.ShadowDecoration.CustomizableEdges = customizableEdges28;
+            btnDashboard.Size = new Size(200, 45);
+            btnDashboard.TabIndex = 1;
+            btnDashboard.Text = "Dashboard";
             // 
             // pnlSidebar
             // 
-            pnlSidebar.Controls.Add(guna2Button5);
-            pnlSidebar.Controls.Add(guna2Button4);
-            pnlSidebar.Controls.Add(guna2Button3);
-            pnlSidebar.Controls.Add(guna2Button2);
-            pnlSidebar.Controls.Add(guna2Button1);
-            pnlSidebar.Controls.Add(label6);
+            pnlSidebar.Controls.Add(btnMeuPerfil);
+            pnlSidebar.Controls.Add(btnUsuarios);
+            pnlSidebar.Controls.Add(btnCategoria);
+            pnlSidebar.Controls.Add(btnFilmes);
+            pnlSidebar.Controls.Add(btnDashboard);
+            pnlSidebar.Controls.Add(lblSessao);
             pnlSidebar.Location = new Point(0, 174);
             pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Size = new Size(200, 362);
+            pnlSidebar.Size = new Size(200, 380);
             pnlSidebar.TabIndex = 0;
             // 
-            // guna2Button2
+            // btnFilmes
             // 
-            guna2Button2.CustomizableEdges = customizableEdges25;
-            guna2Button2.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button2.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button2.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button2.Font = new Font("Segoe UI", 9F);
-            guna2Button2.ForeColor = Color.White;
-            guna2Button2.Location = new Point(0, 45);
-            guna2Button2.Name = "guna2Button2";
-            guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            guna2Button2.Size = new Size(200, 45);
-            guna2Button2.TabIndex = 1;
-            guna2Button2.Text = "guna2Button1";
+            btnFilmes.CustomizableEdges = customizableEdges35;
+            btnFilmes.DisabledState.BorderColor = Color.DarkGray;
+            btnFilmes.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnFilmes.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnFilmes.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnFilmes.Font = new Font("Segoe UI", 9F);
+            btnFilmes.ForeColor = Color.White;
+            btnFilmes.Location = new Point(0, 45);
+            btnFilmes.Name = "btnFilmes";
+            btnFilmes.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            btnFilmes.Size = new Size(200, 45);
+            btnFilmes.TabIndex = 1;
+            btnFilmes.Text = "Filmes";
             // 
-            // guna2Button3
+            // btnCategoria
             // 
-            guna2Button3.CustomizableEdges = customizableEdges27;
-            guna2Button3.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button3.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button3.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button3.Font = new Font("Segoe UI", 9F);
-            guna2Button3.ForeColor = Color.White;
-            guna2Button3.Location = new Point(0, 90);
-            guna2Button3.Name = "guna2Button3";
-            guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            guna2Button3.Size = new Size(200, 45);
-            guna2Button3.TabIndex = 1;
-            guna2Button3.Text = "guna2Button1";
+            btnCategoria.CustomizableEdges = customizableEdges33;
+            btnCategoria.DisabledState.BorderColor = Color.DarkGray;
+            btnCategoria.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnCategoria.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnCategoria.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnCategoria.Font = new Font("Segoe UI", 9F);
+            btnCategoria.ForeColor = Color.White;
+            btnCategoria.Location = new Point(0, 90);
+            btnCategoria.Name = "btnCategoria";
+            btnCategoria.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            btnCategoria.Size = new Size(200, 45);
+            btnCategoria.TabIndex = 1;
+            btnCategoria.Text = "Categoria";
             // 
-            // guna2Button4
+            // btnUsuarios
             // 
-            guna2Button4.CustomizableEdges = customizableEdges29;
-            guna2Button4.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button4.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button4.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button4.Font = new Font("Segoe UI", 9F);
-            guna2Button4.ForeColor = Color.White;
-            guna2Button4.Location = new Point(0, 135);
-            guna2Button4.Name = "guna2Button4";
-            guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            guna2Button4.Size = new Size(200, 45);
-            guna2Button4.TabIndex = 1;
-            guna2Button4.Text = "guna2Button1";
+            btnUsuarios.CustomizableEdges = customizableEdges31;
+            btnUsuarios.DisabledState.BorderColor = Color.DarkGray;
+            btnUsuarios.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnUsuarios.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnUsuarios.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnUsuarios.Font = new Font("Segoe UI", 9F);
+            btnUsuarios.ForeColor = Color.White;
+            btnUsuarios.Location = new Point(0, 135);
+            btnUsuarios.Name = "btnUsuarios";
+            btnUsuarios.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            btnUsuarios.Size = new Size(200, 45);
+            btnUsuarios.TabIndex = 1;
+            btnUsuarios.Text = "Usuários";
             // 
-            // guna2Button5
+            // btnMeuPerfil
             // 
-            guna2Button5.CustomizableEdges = customizableEdges31;
-            guna2Button5.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button5.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button5.Font = new Font("Segoe UI", 9F);
-            guna2Button5.ForeColor = Color.White;
-            guna2Button5.Location = new Point(0, 180);
-            guna2Button5.Name = "guna2Button5";
-            guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges32;
-            guna2Button5.Size = new Size(200, 45);
-            guna2Button5.TabIndex = 1;
-            guna2Button5.Text = "guna2Button1";
+            btnMeuPerfil.CustomizableEdges = customizableEdges29;
+            btnMeuPerfil.DisabledState.BorderColor = Color.DarkGray;
+            btnMeuPerfil.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnMeuPerfil.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnMeuPerfil.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnMeuPerfil.Font = new Font("Segoe UI", 9F);
+            btnMeuPerfil.ForeColor = Color.White;
+            btnMeuPerfil.Location = new Point(0, 180);
+            btnMeuPerfil.Name = "btnMeuPerfil";
+            btnMeuPerfil.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            btnMeuPerfil.Size = new Size(200, 45);
+            btnMeuPerfil.TabIndex = 1;
+            btnMeuPerfil.Text = "Meu Perfil";
             // 
-            // guna2Button6
+            // btnLogout
             // 
-            guna2Button6.CustomizableEdges = customizableEdges21;
-            guna2Button6.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button6.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button6.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button6.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button6.Font = new Font("Segoe UI", 9F);
-            guna2Button6.ForeColor = Color.White;
-            guna2Button6.Location = new Point(591, 30);
-            guna2Button6.Name = "guna2Button6";
-            guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            guna2Button6.Size = new Size(99, 36);
-            guna2Button6.TabIndex = 1;
-            guna2Button6.Text = "guna2Button1";
+            btnLogout.CustomizableEdges = customizableEdges25;
+            btnLogout.DisabledState.BorderColor = Color.DarkGray;
+            btnLogout.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnLogout.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnLogout.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnLogout.Font = new Font("Segoe UI", 9F);
+            btnLogout.ForeColor = Color.White;
+            btnLogout.Location = new Point(591, 30);
+            btnLogout.Name = "btnLogout";
+            btnLogout.ShadowDecoration.CustomizableEdges = customizableEdges26;
+            btnLogout.Size = new Size(99, 36);
+            btnLogout.TabIndex = 1;
+            btnLogout.Text = "Sair";
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(907, 535);
+            ClientSize = new Size(929, 553);
             Controls.Add(pnlConteudo);
             Controls.Add(pnlSidebar);
             Controls.Add(pnlHeader);
-            Controls.Add(panel3);
+            Controls.Add(pnlLogo);
             Controls.Add(pnlUsuario);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "MainForm";
             Text = "MainForm";
             pnlUsuario.ResumeLayout(false);
             pnlUsuario.PerformLayout();
             pnlHeader.ResumeLayout(false);
             pnlHeader.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
+            pnlLogo.ResumeLayout(false);
+            pnlLogo.PerformLayout();
             pnlSidebar.ResumeLayout(false);
             pnlSidebar.PerformLayout();
             ResumeLayout(false);
@@ -287,20 +288,20 @@
 
         private Panel pnlUsuario;
         private Panel pnlHeader;
-        private Label label2;
-        private Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Label label3;
-        private Panel panel3;
-        private Label label5;
-        private Label label4;
+        private Label lblPerfil;
+        private Label lblUsuario;
+        private Guna.UI2.WinForms.Guna2Button btnDashboard;
+        private Label lblTitulo;
+        private Panel pnlLogo;
+        private Label lblSiderbarSub;
+        private Label lblSiderbarLogo;
         private Panel pnlConteudo;
-        private Label label6;
+        private Label lblSessao;
         private Panel pnlSidebar;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btnMeuPerfil;
+        private Guna.UI2.WinForms.Guna2Button btnUsuarios;
+        private Guna.UI2.WinForms.Guna2Button btnCategoria;
+        private Guna.UI2.WinForms.Guna2Button btnFilmes;
+        private Guna.UI2.WinForms.Guna2Button btnLogout;
     }
 }
