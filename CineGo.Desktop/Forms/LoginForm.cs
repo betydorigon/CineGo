@@ -25,7 +25,7 @@ namespace CineGo.Desktop.Forms
 
             _authServuce = AuthService();
 
-            lblAPI.Text = $"API: {AppConfig.ApiBaseUrl}";
+            lblAPI.Text = $"Versão {AppConfig.Version} | ©️ {DateTime.Now.Year} SENAC-SMP";
 
             txtEmail.Text = "Admin@CineGo.com";
             txtSenha.Text = "Admin@123";
@@ -59,7 +59,7 @@ namespace CineGo.Desktop.Forms
                 var (success, user, errorMessage) = await _authService.LoginAsync(txtEmail.Text.Trim(), txtSenha.Text);
 
 
-                if (sucess && User != null)
+                if (success && user != null)
                 {
                     SessioManager.Instance.SetUser(user);
 
@@ -80,7 +80,7 @@ namespace CineGo.Desktop.Forms
             catch (HttpRequestException exHttp)
             {
                 ExibirErro($"Não foi possível conectar à API. \nVerifique se a API está em execução erro do sistema: {exHttp.Message}");
-                MessageBox.Show($"❌ Não foi possível conectar à API. \nVerifique se a API está em execução erro do sistema: {exHttp.Message}")
+                MessageBox.Show($"❌ Não foi possível conectar à API. \nVerifique se a API está em execução erro do sistema: {exHttp.Message}");
             }
             catch (Exception ex)
             {
