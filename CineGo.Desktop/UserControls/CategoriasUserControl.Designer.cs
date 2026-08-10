@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges29 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblTitulo = new Label();
             pnlToolBar = new Panel();
             btnAtualizar = new Guna.UI2.WinForms.Guna2Button();
@@ -55,6 +55,9 @@
             lblNome = new Label();
             lblFormTitulo = new Label();
             dataGridView1 = new DataGridView();
+            colID = new DataGridViewTextBoxColumn();
+            colName = new DataGridViewTextBoxColumn();
+            colFilmesCount = new DataGridViewTextBoxColumn();
             pnlToolBar.SuspendLayout();
             pnlForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -82,7 +85,7 @@
             // 
             // btnAtualizar
             // 
-            btnAtualizar.CustomizableEdges = customizableEdges29;
+            btnAtualizar.CustomizableEdges = customizableEdges1;
             btnAtualizar.DisabledState.BorderColor = Color.DarkGray;
             btnAtualizar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAtualizar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -91,14 +94,14 @@
             btnAtualizar.ForeColor = Color.White;
             btnAtualizar.Location = new Point(349, 27);
             btnAtualizar.Name = "btnAtualizar";
-            btnAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges30;
+            btnAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnAtualizar.Size = new Size(106, 45);
             btnAtualizar.TabIndex = 0;
             btnAtualizar.Text = "🔃 Atualizar";
             // 
             // btnExcluir
             // 
-            btnExcluir.CustomizableEdges = customizableEdges31;
+            btnExcluir.CustomizableEdges = customizableEdges3;
             btnExcluir.DisabledState.BorderColor = Color.DarkGray;
             btnExcluir.DisabledState.CustomBorderColor = Color.DarkGray;
             btnExcluir.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -107,14 +110,14 @@
             btnExcluir.ForeColor = Color.White;
             btnExcluir.Location = new Point(237, 27);
             btnExcluir.Name = "btnExcluir";
-            btnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges32;
+            btnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnExcluir.Size = new Size(106, 45);
             btnExcluir.TabIndex = 0;
             btnExcluir.Text = "🗑️ Excluir";
             // 
             // btnEditar
             // 
-            btnEditar.CustomizableEdges = customizableEdges33;
+            btnEditar.CustomizableEdges = customizableEdges5;
             btnEditar.DisabledState.BorderColor = Color.DarkGray;
             btnEditar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnEditar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -123,14 +126,14 @@
             btnEditar.ForeColor = Color.White;
             btnEditar.Location = new Point(125, 27);
             btnEditar.Name = "btnEditar";
-            btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnEditar.Size = new Size(106, 45);
             btnEditar.TabIndex = 0;
             btnEditar.Text = "✏️ Editar";
             // 
             // btnNova
             // 
-            btnNova.CustomizableEdges = customizableEdges35;
+            btnNova.CustomizableEdges = customizableEdges7;
             btnNova.DisabledState.BorderColor = Color.DarkGray;
             btnNova.DisabledState.CustomBorderColor = Color.DarkGray;
             btnNova.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -139,7 +142,7 @@
             btnNova.ForeColor = Color.White;
             btnNova.Location = new Point(13, 27);
             btnNova.Name = "btnNova";
-            btnNova.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            btnNova.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnNova.Size = new Size(106, 45);
             btnNova.TabIndex = 0;
             btnNova.Text = "+ Nova Categoria";
@@ -159,7 +162,7 @@
             // btnCancelar
             // 
             btnCancelar.BorderRadius = 5;
-            btnCancelar.CustomizableEdges = customizableEdges37;
+            btnCancelar.CustomizableEdges = customizableEdges9;
             btnCancelar.DisabledState.BorderColor = Color.DarkGray;
             btnCancelar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnCancelar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -168,7 +171,7 @@
             btnCancelar.ForeColor = Color.White;
             btnCancelar.Location = new Point(103, 144);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            btnCancelar.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnCancelar.Size = new Size(90, 34);
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "❌Cancelar";
@@ -177,7 +180,7 @@
             // 
             btnSalvar.BackColor = Color.Transparent;
             btnSalvar.BorderRadius = 5;
-            btnSalvar.CustomizableEdges = customizableEdges39;
+            btnSalvar.CustomizableEdges = customizableEdges11;
             btnSalvar.DisabledState.BorderColor = Color.DarkGray;
             btnSalvar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnSalvar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -186,14 +189,14 @@
             btnSalvar.ForeColor = Color.White;
             btnSalvar.Location = new Point(11, 144);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            btnSalvar.ShadowDecoration.CustomizableEdges = customizableEdges12;
             btnSalvar.Size = new Size(90, 34);
             btnSalvar.TabIndex = 2;
             btnSalvar.Text = "🗃️ Salvar";
             // 
             // txtNome
             // 
-            txtNome.CustomizableEdges = customizableEdges41;
+            txtNome.CustomizableEdges = customizableEdges13;
             txtNome.DefaultText = "";
             txtNome.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtNome.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -206,7 +209,7 @@
             txtNome.Name = "txtNome";
             txtNome.PlaceholderText = "Ex: Suspense, Ação...";
             txtNome.SelectedText = "";
-            txtNome.ShadowDecoration.CustomizableEdges = customizableEdges42;
+            txtNome.ShadowDecoration.CustomizableEdges = customizableEdges14;
             txtNome.Size = new Size(180, 36);
             txtNome.TabIndex = 1;
             // 
@@ -231,10 +234,26 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { colID, colName, colFilmesCount });
             dataGridView1.Location = new Point(22, 147);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(468, 277);
             dataGridView1.TabIndex = 2;
+            // 
+            // colID
+            // 
+            colID.HeaderText = "ID";
+            colID.Name = "colID";
+            // 
+            // colName
+            // 
+            colName.HeaderText = "Nome da categoria";
+            colName.Name = "colName";
+            // 
+            // colFilmesCount
+            // 
+            colFilmesCount.HeaderText = "Total de filmes";
+            colFilmesCount.Name = "colFilmesCount";
             // 
             // CategoriasUserControl
             // 
@@ -269,5 +288,8 @@
         private Label lblNome;
         private Label lblFormTitulo;
         private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn colID;
+        private DataGridViewTextBoxColumn colName;
+        private DataGridViewTextBoxColumn colFilmesCount;
     }
 }

@@ -70,7 +70,7 @@ namespace CineGo.Application.Services
             filme.Classificacao = filmesDto.Classificacao;
             filme.CoverImageUrl = filmesDto.CoverImageUrl;
 
-            await _filmeRepository.UpdateASync(filme);
+            await _filmeRepository.UpdateAsync(filme);
             return MapToDto(filme);
         }
 
@@ -78,7 +78,7 @@ namespace CineGo.Application.Services
         {
             var filme = await _filmeRepository.GetByIdAsync(id);
             if (filme == null) return false;
-            await _filmeRepository.DeleteASync(id);
+            await _filmeRepository.DeleteAsync(id);
             return true;
         }
 
