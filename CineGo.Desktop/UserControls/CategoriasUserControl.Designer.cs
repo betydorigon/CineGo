@@ -65,9 +65,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(22, 21);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(178, 15);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "🏷️ Gerenciamento de Categorias";
             // 
             // panel1
             // 
@@ -114,7 +114,7 @@
             guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges8;
             guna2Button1.Size = new Size(106, 45);
             guna2Button1.TabIndex = 0;
-            guna2Button1.Text = "guna2Button1";
+            guna2Button1.Text = "+ Nova Categoria";
             // 
             // guna2Button2
             // 
@@ -130,7 +130,7 @@
             guna2Button2.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Button2.Size = new Size(106, 45);
             guna2Button2.TabIndex = 0;
-            guna2Button2.Text = "guna2Button1";
+            guna2Button2.Text = "✏️ Editar";
             // 
             // guna2Button3
             // 
@@ -146,7 +146,7 @@
             guna2Button3.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2Button3.Size = new Size(106, 45);
             guna2Button3.TabIndex = 0;
-            guna2Button3.Text = "guna2Button1";
+            guna2Button3.Text = "🗑️ Excluir";
             // 
             // guna2Button4
             // 
@@ -162,25 +162,25 @@
             guna2Button4.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Button4.Size = new Size(106, 45);
             guna2Button4.TabIndex = 0;
-            guna2Button4.Text = "guna2Button1";
+            guna2Button4.Text = "🔃 Atualizar";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(27, 30);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(89, 15);
             label2.TabIndex = 0;
-            label2.Text = "label2";
+            label2.Text = "Nova Categoria";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(27, 68);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(107, 15);
             label3.TabIndex = 0;
-            label3.Text = "label2";
+            label3.Text = "Nime da categoria:";
             // 
             // guna2TextBox1
             // 
@@ -193,16 +193,18 @@
             guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             guna2TextBox1.Font = new Font("Segoe UI", 9F);
             guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(17, 98);
+            guna2TextBox1.Location = new Point(12, 97);
             guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PlaceholderText = "";
+            guna2TextBox1.PlaceholderText = "Ex: Suspense, Ação...";
             guna2TextBox1.SelectedText = "";
             guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2TextBox1.Size = new Size(174, 36);
+            guna2TextBox1.Size = new Size(180, 36);
             guna2TextBox1.TabIndex = 1;
             // 
             // guna2Button5
             // 
+            guna2Button5.BackColor = Color.Transparent;
+            guna2Button5.BorderRadius = 5;
             guna2Button5.CustomizableEdges = customizableEdges11;
             guna2Button5.DisabledState.BorderColor = Color.DarkGray;
             guna2Button5.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -210,15 +212,16 @@
             guna2Button5.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button5.Font = new Font("Segoe UI", 9F);
             guna2Button5.ForeColor = Color.White;
-            guna2Button5.Location = new Point(17, 151);
+            guna2Button5.Location = new Point(11, 144);
             guna2Button5.Name = "guna2Button5";
             guna2Button5.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Button5.Size = new Size(84, 34);
+            guna2Button5.Size = new Size(90, 34);
             guna2Button5.TabIndex = 2;
-            guna2Button5.Text = "guna2Button5";
+            guna2Button5.Text = "🗃️ Salvar";
             // 
             // guna2Button6
             // 
+            guna2Button6.BorderRadius = 5;
             guna2Button6.CustomizableEdges = customizableEdges9;
             guna2Button6.DisabledState.BorderColor = Color.DarkGray;
             guna2Button6.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -226,12 +229,12 @@
             guna2Button6.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             guna2Button6.Font = new Font("Segoe UI", 9F);
             guna2Button6.ForeColor = Color.White;
-            guna2Button6.Location = new Point(107, 151);
+            guna2Button6.Location = new Point(103, 144);
             guna2Button6.Name = "guna2Button6";
             guna2Button6.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2Button6.Size = new Size(84, 34);
+            guna2Button6.Size = new Size(90, 34);
             guna2Button6.TabIndex = 2;
-            guna2Button6.Text = "guna2Button5";
+            guna2Button6.Text = "❌Cancelar";
             // 
             // CategoriasUserControl
             // 

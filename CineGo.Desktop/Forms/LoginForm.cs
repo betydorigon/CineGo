@@ -32,7 +32,7 @@ namespace CineGo.Desktop.Forms
 
         }
 
-       
+
 
         private async Task btnEntrar_Click(object sender, EventArgs e)
         {
@@ -82,7 +82,7 @@ namespace CineGo.Desktop.Forms
                 ExibirErro($"Não foi possível conectar à API. \nVerifique se a API está em execução erro do sistema: {exHttp.Message}");
                 MessageBox.Show($"❌ Não foi possível conectar à API. \nVerifique se a API está em execução erro do sistema: {exHttp.Message}")
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 ExibirErro($"❌ Erro inesperado: {ex.Message}");
                 MessageBox.Show($"❌ Erro inesperado: {ex.Message}");
@@ -128,5 +128,9 @@ namespace CineGo.Desktop.Forms
             }
         }
 
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

@@ -44,6 +44,7 @@
             cardCategoriasLblNumero = new Label();
             cardCategoriasLblDesc = new Label();
             colId = new DataGridViewTextBoxColumn();
+            ColClass = new DataGridViewTextBoxColumn();
             colTitle = new DataGridViewTextBoxColumn();
             colCategoryName = new DataGridViewTextBoxColumn();
             colReleaseYear = new DataGridViewTextBoxColumn();
@@ -92,7 +93,7 @@
             // gridUltimosFilmes
             // 
             gridUltimosFilmes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gridUltimosFilmes.Columns.AddRange(new DataGridViewColumn[] { colId, colTitle, colCategoryName, colReleaseYear, colCreatedAt });
+            gridUltimosFilmes.Columns.AddRange(new DataGridViewColumn[] { colId, ColClass, colTitle, colCategoryName, colReleaseYear, colCreatedAt });
             gridUltimosFilmes.Location = new Point(31, 270);
             gridUltimosFilmes.Name = "gridUltimosFilmes";
             gridUltimosFilmes.Size = new Size(646, 150);
@@ -191,6 +192,11 @@
             colId.HeaderText = "ID";
             colId.Name = "colId";
             // 
+            // ColClass
+            // 
+            ColClass.HeaderText = "Classificação";
+            ColClass.Name = "ColClass";
+            // 
             // colTitle
             // 
             colTitle.HeaderText = "Título";
@@ -253,6 +259,7 @@
         private Panel pnlCorCategorias;
         private Panel pnlCorFilmes;
         private DataGridViewTextBoxColumn colId;
+        private DataGridViewTextBoxColumn ColClass;
         private DataGridViewTextBoxColumn colTitle;
         private DataGridViewTextBoxColumn colCategoryName;
         private DataGridViewTextBoxColumn colReleaseYear;
