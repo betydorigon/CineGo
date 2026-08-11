@@ -98,6 +98,7 @@
             btnAtualizar.Size = new Size(106, 45);
             btnAtualizar.TabIndex = 0;
             btnAtualizar.Text = "🔃 Atualizar";
+
             // 
             // btnExcluir
             // 
@@ -269,7 +270,6 @@
             Controls.Add(lblTitulo);
             Name = "CategoriasUserControl";
             Size = new Size(711, 438);
-            Load += CategoriasUserControl_Load_1;
             pnlToolBar.ResumeLayout(false);
             pnlForm.ResumeLayout(false);
             pnlForm.PerformLayout();

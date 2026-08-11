@@ -14,6 +14,7 @@ namespace CineGo.domain.Entities
         public int CategoriaId { get; set; }
         public int Classificacao { get; set; }
         public string CoverImageUrl { get; set; } = string.Empty;
+        public DateTime CreatedAt { get; set; }
 
         public virtual Categoria? Categoria { get; set; }
     }

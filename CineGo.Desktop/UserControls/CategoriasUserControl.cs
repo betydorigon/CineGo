@@ -15,7 +15,7 @@ namespace CineGo.Desktop.UserControls
     public partial class CategoriasUserControl : UserControl
     {
         private CategoriaApiService _CategoriaService = null;
-        private List<CategoriaResponseDto> _categoria = new();
+        private List<CategoriaResponseDto> _categorias = new();
 
         private int? _editandoId = null;
 
@@ -38,8 +38,8 @@ namespace CineGo.Desktop.UserControls
             gridCategorias.Rows.Clear();
             try
             {
-                _categoria = await _CategoriaService.GetAllAsync();
-                foreach (var c in _categoria)
+                _categorias = await _CategoriaService.GetAllAsync();
+                foreach (var c in _categorias)
                     gridCategorias.Rows.Add(c.Id, c.Name, c.FilmesCount);
             }
             catch (Exception ex)
@@ -94,6 +94,8 @@ namespace CineGo.Desktop.UserControls
             MostrarFormulario(cat);
         }
 
+
+
         private async void btnExcluir_Click(object sender, EventArgs e)
         {
             var cat = ObterCategoriaSelecionada();
@@ -131,6 +133,13 @@ namespace CineGo.Desktop.UserControls
             {
                 MessageBox.Show($"❌ {error}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private CategoriaResponseDto? ObterCategoriaSelecionada()
+        {
+            if (gridCategorias.SelectedRows.Count == 0) return null;
+            var id = Convert.ToInt32(gridCategorias.SelectedRows[0].Cells["colId"].Value);
+            return _categorias.FirstOrDefault(c => c.Id == id);
         }
 
         private async Task btnAtualizar_Click(object? sender, EventArgs e) => await CarregarDadosAsync();
