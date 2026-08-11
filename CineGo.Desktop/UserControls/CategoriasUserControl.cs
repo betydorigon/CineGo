@@ -170,6 +170,10 @@ namespace CineGo.Desktop.UserControls
         }
 
         private void btnCancelar_Click(object sender, EventArgs e) => OcultarFormulario();
-       
+
+        private void CategoriasUserControl_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
