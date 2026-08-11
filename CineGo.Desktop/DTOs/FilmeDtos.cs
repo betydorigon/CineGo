@@ -23,7 +23,7 @@ namespace CineGo.Desktop.DTOs
 
     }
 
-    public class CreateGameDto
+    public class CreateFilmeDto
     {
         public string Name { get; set; } = string.Empty;
         public string Duracao { get; set; } = string.Empty;
@@ -35,7 +35,7 @@ namespace CineGo.Desktop.DTOs
         public bool IsFeatured { get; set; }
     }
 
-    public class UpdateGameDto
+    public class UpdateFilmeDto
     {
         public string Name { get; set; } = string.Empty;
         public string Duracao { get; set; } = string.Empty;
