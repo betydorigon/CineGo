@@ -10,21 +10,21 @@ using CineGo.Desktop.Helpers;
 
 namespace CineGo.Desktop.UserControls
 {
-    private FilmeApiService _filmeService = null;
-    private CategoriaApiService _categoriaService = null; 
     public partial class DashboardUserControl : UserControl
     {
+    private FilmesApiService _filmeService = null;
+    private CategoriaApiService _categoriaService = null; 
         
         public DashboardUserControl()
         {
             InitializeComponent();
         }
 
-        private async Task DashboardUserControl_Load(object sender, EventArgs e)
+        private async void DashboardUserControl_Load(object sender, EventArgs e)
         {
             if (DesignMode) return;
 
-            _filmeService = filmeApiService();
+            _filmeService = new FilmesApiService();
             _categoriaService = new CategoriaApiService();
 
             lblTitulo.Text = $"Olá, {SessionManager.Instance.GetDisplayName()!} 👋";
@@ -34,7 +34,7 @@ namespace CineGo.Desktop.UserControls
         }
         private async Task CarregarDadosAsync()
         {
-            SetCarregando();
+            SetCarregando(true);
 
             try
             {
@@ -49,7 +49,7 @@ namespace CineGo.Desktop.UserControls
                 cardCatedoriasLblTitulo.Text = categorias.Count.ToString();
 
                 gridUltimosFilmes.Rows.Clear();
-                foreach (var filme in filmes.OrderByDescending(X => X.CreatedAt).Take(10))
+                foreach (var filme in filmes.OrderByDescending(x => x.CreatedAt).Take(10))
                 {
                     gridUltimosFilmes.Rows.Add(filme.Id, filme.Titulo, filme.Categoria, filme.Duracao, filme.Classificacao, filme.CreatedAt.ToString("dd/MM/yyyy HH:mm:ss"));
                 }
