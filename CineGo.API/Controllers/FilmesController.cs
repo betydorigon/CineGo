@@ -43,8 +43,8 @@ public class FilmesController : ControllerBase
     }
 
     /// <summary>
-    /// Retorna todos os games.
-    /// GET /api/games
+    /// Retorna todos os filmes.
+    /// GET /api/filmes
     /// </summary>
     [HttpGet]
     public async Task<ActionResult<IEnumerable<FilmeDto>>> GetAll()
@@ -54,7 +54,7 @@ public class FilmesController : ControllerBase
     }
 
     /// <summary>
-    /// Busca um game específico pelo Id.
+    /// Busca um filme específico pelo Id.
     /// GET /api/games/{id}
     /// </summary>
     [HttpGet("{id}")]
@@ -69,7 +69,7 @@ public class FilmesController : ControllerBase
     }
 
     /// <summary>
-    /// Cria um novo game.
+    /// Cria um novo filme.
     /// POST /api/games
     /// Requer autenticação (somente admin pode criar games).
     /// </summary>
@@ -84,7 +84,7 @@ public class FilmesController : ControllerBase
     }
 
     /// <summary>
-    /// Atualiza um game existente.
+    /// Atualiza um filme existente.
     /// PUT /api/games/{id}
     /// </summary>
     [HttpPut("{id}")]
@@ -100,7 +100,7 @@ public class FilmesController : ControllerBase
     }
 
     /// <summary>
-    /// Remove um game.
+    /// Remove um filme
     /// DELETE /api/games/{id}
     /// </summary>
     [HttpDelete("{id}")]

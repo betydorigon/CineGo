@@ -98,10 +98,7 @@
             btnAtualizar.Size = new Size(106, 45);
             btnAtualizar.TabIndex = 0;
             btnAtualizar.Text = "🔃 Atualizar";
-<<<<<<< HEAD
-=======
 
->>>>>>> b3769f85b841208f7068eb4443a0385806965090
             // 
             // btnExcluir
             // 
