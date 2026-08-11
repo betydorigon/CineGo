@@ -179,7 +179,7 @@
             btnEntrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnEntrar.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEntrar.ForeColor = Color.White;
-            btnEntrar.Location = new Point(90, 328);
+            btnEntrar.Location = new Point(89, 328);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnEntrar.Size = new Size(229, 45);
