@@ -1,0 +1,233 @@
+﻿namespace CineGo.Desktop.Forms
+{
+    partial class UsuarioFormDialog
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges15 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges16 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges17 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges18 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges19 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges20 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            lblTitulo = new Label();
+            lblEmail = new Label();
+            lblSenha = new Label();
+            lblConf = new Label();
+            lblPerfil = new Label();
+            txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
+            txtConfirmar = new Guna.UI2.WinForms.Guna2TextBox();
+            cmbPerfil = new ComboBox();
+            btnSalvar = new Guna.UI2.WinForms.Guna2Button();
+            btnCancelar = new Guna.UI2.WinForms.Guna2Button();
+            SuspendLayout();
+            // 
+            // lblTitulo
+            // 
+            lblTitulo.AutoSize = true;
+            lblTitulo.Location = new Point(43, 25);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(94, 15);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "👤 Novo Usuário";
+            // 
+            // lblEmail
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(43, 60);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(54, 15);
+            lblEmail.TabIndex = 0;
+            lblEmail.Text = "E-MAIL *";
+            // 
+            // lblSenha
+            // 
+            lblSenha.AutoSize = true;
+            lblSenha.Location = new Point(43, 128);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(53, 15);
+            lblSenha.TabIndex = 0;
+            lblSenha.Text = "SENHA *";
+            // 
+            // lblConf
+            // 
+            lblConf.AutoSize = true;
+            lblConf.Location = new Point(43, 193);
+            lblConf.Name = "lblConf";
+            lblConf.Size = new Size(124, 15);
+            lblConf.TabIndex = 0;
+            lblConf.Text = "CONFIRMAR SENHA *";
+            // 
+            // lblPerfil
+            // 
+            lblPerfil.AutoSize = true;
+            lblPerfil.Location = new Point(43, 262);
+            lblPerfil.Name = "lblPerfil";
+            lblPerfil.Size = new Size(81, 15);
+            lblPerfil.TabIndex = 0;
+            lblPerfil.Text = "PERFIL (ROLE)";
+            // 
+            // txtEmail
+            // 
+            txtEmail.CustomizableEdges = customizableEdges11;
+            txtEmail.DefaultText = "";
+            txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtEmail.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtEmail.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtEmail.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtEmail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtEmail.Font = new Font("Segoe UI", 9F);
+            txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtEmail.Location = new Point(43, 78);
+            txtEmail.Name = "txtEmail";
+            txtEmail.PlaceholderText = "";
+            txtEmail.SelectedText = "";
+            txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges12;
+            txtEmail.Size = new Size(441, 36);
+            txtEmail.TabIndex = 1;
+            // 
+            // txtSenha
+            // 
+            txtSenha.CustomizableEdges = customizableEdges13;
+            txtSenha.DefaultText = "";
+            txtSenha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtSenha.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtSenha.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtSenha.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtSenha.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSenha.Font = new Font("Segoe UI", 9F);
+            txtSenha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtSenha.Location = new Point(43, 146);
+            txtSenha.Name = "txtSenha";
+            txtSenha.PlaceholderText = "";
+            txtSenha.SelectedText = "";
+            txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            txtSenha.Size = new Size(441, 36);
+            txtSenha.TabIndex = 1;
+            // 
+            // txtConfirmar
+            // 
+            txtConfirmar.CustomizableEdges = customizableEdges15;
+            txtConfirmar.DefaultText = "";
+            txtConfirmar.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            txtConfirmar.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            txtConfirmar.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            txtConfirmar.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            txtConfirmar.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtConfirmar.Font = new Font("Segoe UI", 9F);
+            txtConfirmar.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            txtConfirmar.Location = new Point(43, 211);
+            txtConfirmar.Name = "txtConfirmar";
+            txtConfirmar.PlaceholderText = "";
+            txtConfirmar.SelectedText = "";
+            txtConfirmar.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            txtConfirmar.Size = new Size(441, 36);
+            txtConfirmar.TabIndex = 1;
+            // 
+            // cmbPerfil
+            // 
+            cmbPerfil.FormattingEnabled = true;
+            cmbPerfil.Location = new Point(43, 280);
+            cmbPerfil.Name = "cmbPerfil";
+            cmbPerfil.Size = new Size(441, 23);
+            cmbPerfil.TabIndex = 2;
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.CustomizableEdges = customizableEdges17;
+            btnSalvar.DisabledState.BorderColor = Color.DarkGray;
+            btnSalvar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSalvar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSalvar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSalvar.Font = new Font("Segoe UI", 9F);
+            btnSalvar.ForeColor = Color.White;
+            btnSalvar.Location = new Point(43, 344);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnSalvar.Size = new Size(180, 45);
+            btnSalvar.TabIndex = 3;
+            btnSalvar.Text = "🗃️ Salvar";
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.CustomizableEdges = customizableEdges19;
+            btnCancelar.DisabledState.BorderColor = Color.DarkGray;
+            btnCancelar.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnCancelar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnCancelar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnCancelar.Font = new Font("Segoe UI", 9F);
+            btnCancelar.ForeColor = Color.White;
+            btnCancelar.Location = new Point(229, 344);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnCancelar.Size = new Size(180, 45);
+            btnCancelar.TabIndex = 4;
+            btnCancelar.Text = "Cancelar";
+            // 
+            // UsuarioFormDialog
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(520, 425);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnSalvar);
+            Controls.Add(cmbPerfil);
+            Controls.Add(txtConfirmar);
+            Controls.Add(txtSenha);
+            Controls.Add(txtEmail);
+            Controls.Add(lblPerfil);
+            Controls.Add(lblConf);
+            Controls.Add(lblSenha);
+            Controls.Add(lblEmail);
+            Controls.Add(lblTitulo);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "UsuarioFormDialog";
+            Text = "UsuarioFormDialog";
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label lblTitulo;
+        private Label lblEmail;
+        private Label lblSenha;
+        private Label lblConf;
+        private Label lblPerfil;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
+        private Guna.UI2.WinForms.Guna2TextBox txtSenha;
+        private Guna.UI2.WinForms.Guna2TextBox txtConfirmar;
+        private ComboBox cmbPerfil;
+        private Guna.UI2.WinForms.Guna2Button btnSalvar;
+        private Guna.UI2.WinForms.Guna2Button btnCancelar;
+    }
+}

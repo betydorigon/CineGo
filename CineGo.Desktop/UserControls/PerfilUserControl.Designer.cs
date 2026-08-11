@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblTitulo = new Label();
             card = new Panel();
             sep = new Panel();
@@ -88,7 +88,7 @@
             btnAvatar.ForeColor = Color.White;
             btnAvatar.Location = new Point(254, 9);
             btnAvatar.Name = "btnAvatar";
-            btnAvatar.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnAvatar.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             btnAvatar.Size = new Size(100, 100);
             btnAvatar.TabIndex = 0;
@@ -151,6 +151,7 @@
             // lblBagde
             // 
             lblBagde.AutoSize = true;
+            lblBagde.BackColor = Color.DodgerBlue;
             lblBagde.Location = new Point(238, 150);
             lblBagde.Name = "lblBagde";
             lblBagde.Padding = new Padding(50, 10, 50, 10);
