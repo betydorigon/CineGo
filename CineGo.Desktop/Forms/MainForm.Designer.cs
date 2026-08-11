@@ -75,18 +75,19 @@
             // lblPerfil
             // 
             lblPerfil.AutoSize = true;
-            lblPerfil.Location = new Point(27, 61);
+            lblPerfil.Location = new Point(27, 59);
             lblPerfil.Name = "lblPerfil";
             lblPerfil.Size = new Size(34, 15);
             lblPerfil.TabIndex = 0;
-            lblPerfil.Text = "perfil";
+            lblPerfil.Text = "Perfil";
             // 
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
-            lblUsuario.Location = new Point(27, 21);
+            lblUsuario.Font = new Font("Yu Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUsuario.Location = new Point(27, 30);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(59, 15);
+            lblUsuario.Size = new Size(109, 25);
             lblUsuario.TabIndex = 0;
             lblUsuario.Text = "👤Usuário";
             // 
@@ -101,6 +102,7 @@
             // 
             // btnLogout
             // 
+            btnLogout.BorderRadius = 5;
             btnLogout.CustomizableEdges = customizableEdges1;
             btnLogout.DisabledState.BorderColor = Color.DarkGray;
             btnLogout.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -119,9 +121,10 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(42, 41);
+            lblTitulo.Font = new Font("Yu Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(39, 34);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(46, 15);
+            lblTitulo.Size = new Size(86, 27);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "CineGo";
             // 
@@ -146,9 +149,10 @@
             // lblSiderbarLogo
             // 
             lblSiderbarLogo.AutoSize = true;
+            lblSiderbarLogo.Font = new Font("Yu Gothic UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblSiderbarLogo.Location = new Point(27, 16);
             lblSiderbarLogo.Name = "lblSiderbarLogo";
-            lblSiderbarLogo.Size = new Size(46, 15);
+            lblSiderbarLogo.Size = new Size(74, 25);
             lblSiderbarLogo.TabIndex = 0;
             lblSiderbarLogo.Text = "CineGo";
             // 

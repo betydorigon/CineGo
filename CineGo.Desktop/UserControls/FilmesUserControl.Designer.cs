@@ -54,7 +54,6 @@
             colCategoryName = new DataGridViewTextBoxColumn();
             colReleaseYear = new DataGridViewTextBoxColumn();
             colCreatedAt = new DataGridViewTextBoxColumn();
-            colClass = new DataGridViewTextBoxColumn();
             pnlToolBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridFilmes).BeginInit();
             SuspendLayout();
@@ -62,9 +61,10 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Yu Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitulo.Location = new Point(24, 18);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(156, 15);
+            lblTitulo.Size = new Size(216, 19);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "🎬 Gerenciamento de Filmes";
             // 
@@ -83,14 +83,16 @@
             // 
             // btnAtualizar
             // 
+            btnAtualizar.BorderRadius = 5;
             btnAtualizar.CustomizableEdges = customizableEdges1;
             btnAtualizar.DisabledState.BorderColor = Color.DarkGray;
             btnAtualizar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAtualizar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAtualizar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAtualizar.FillColor = Color.Goldenrod;
             btnAtualizar.Font = new Font("Segoe UI", 9F);
             btnAtualizar.ForeColor = Color.White;
-            btnAtualizar.Location = new Point(608, 18);
+            btnAtualizar.Location = new Point(587, 18);
             btnAtualizar.Name = "btnAtualizar";
             btnAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnAtualizar.Size = new Size(89, 36);
@@ -100,11 +102,13 @@
             // 
             // btnExcluir
             // 
+            btnExcluir.BorderRadius = 5;
             btnExcluir.CustomizableEdges = customizableEdges3;
             btnExcluir.DisabledState.BorderColor = Color.DarkGray;
             btnExcluir.DisabledState.CustomBorderColor = Color.DarkGray;
             btnExcluir.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnExcluir.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnExcluir.FillColor = Color.DarkRed;
             btnExcluir.Font = new Font("Segoe UI", 9F);
             btnExcluir.ForeColor = Color.White;
             btnExcluir.Location = new Point(492, 18);
@@ -116,11 +120,13 @@
             // 
             // btnEditar
             // 
+            btnEditar.BorderRadius = 5;
             btnEditar.CustomizableEdges = customizableEdges5;
             btnEditar.DisabledState.BorderColor = Color.DarkGray;
             btnEditar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnEditar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnEditar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnEditar.FillColor = Color.RoyalBlue;
             btnEditar.Font = new Font("Segoe UI", 9F);
             btnEditar.ForeColor = Color.White;
             btnEditar.Location = new Point(397, 18);
@@ -132,11 +138,13 @@
             // 
             // btnNovo
             // 
+            btnNovo.BorderRadius = 5;
             btnNovo.CustomizableEdges = customizableEdges7;
             btnNovo.DisabledState.BorderColor = Color.DarkGray;
             btnNovo.DisabledState.CustomBorderColor = Color.DarkGray;
             btnNovo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnNovo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnNovo.FillColor = Color.ForestGreen;
             btnNovo.Font = new Font("Segoe UI", 9F);
             btnNovo.ForeColor = Color.White;
             btnNovo.Location = new Point(286, 18);
@@ -149,11 +157,13 @@
             // 
             // btnPesquisar
             // 
+            btnPesquisar.BorderRadius = 5;
             btnPesquisar.CustomizableEdges = customizableEdges9;
             btnPesquisar.DisabledState.BorderColor = Color.DarkGray;
             btnPesquisar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnPesquisar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnPesquisar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnPesquisar.FillColor = Color.RoyalBlue;
             btnPesquisar.Font = new Font("Segoe UI", 9F);
             btnPesquisar.ForeColor = Color.White;
             btnPesquisar.Location = new Point(184, 18);
@@ -165,6 +175,7 @@
             // 
             // txtPesquisa
             // 
+            txtPesquisa.BorderRadius = 5;
             txtPesquisa.CustomizableEdges = customizableEdges11;
             txtPesquisa.DefaultText = "";
             txtPesquisa.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -185,7 +196,7 @@
             // gridFilmes
             // 
             gridFilmes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gridFilmes.Columns.AddRange(new DataGridViewColumn[] { colId, colTitle, colCategoryName, colReleaseYear, colCreatedAt, colClass });
+            gridFilmes.Columns.AddRange(new DataGridViewColumn[] { colId, colTitle, colCategoryName, colReleaseYear, colCreatedAt });
             gridFilmes.Location = new Point(14, 127);
             gridFilmes.Name = "gridFilmes";
             gridFilmes.Size = new Size(684, 293);
@@ -215,11 +226,6 @@
             // 
             colCreatedAt.HeaderText = "Cadastrado em";
             colCreatedAt.Name = "colCreatedAt";
-            // 
-            // colClass
-            // 
-            colClass.HeaderText = "Classificação";
-            colClass.Name = "colClass";
             // 
             // FilmesUserControl
             // 
@@ -253,6 +259,5 @@
         private DataGridViewTextBoxColumn colCategoryName;
         private DataGridViewTextBoxColumn colReleaseYear;
         private DataGridViewTextBoxColumn colCreatedAt;
-        private DataGridViewTextBoxColumn colClass;
     }
 }
