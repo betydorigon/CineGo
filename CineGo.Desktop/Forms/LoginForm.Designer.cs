@@ -63,7 +63,7 @@
             // 
             lblTituloBemVindo.AutoSize = true;
             lblTituloBemVindo.Font = new Font("Yu Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTituloBemVindo.Location = new Point(181, 34);
+            lblTituloBemVindo.Location = new Point(166, 33);
             lblTituloBemVindo.Name = "lblTituloBemVindo";
             lblTituloBemVindo.Size = new Size(150, 31);
             lblTituloBemVindo.TabIndex = 1;
@@ -72,7 +72,8 @@
             // lblTextoFacaLogin
             // 
             lblTextoFacaLogin.AutoSize = true;
-            lblTextoFacaLogin.Location = new Point(181, 70);
+            lblTextoFacaLogin.ForeColor = SystemColors.ControlDark;
+            lblTextoFacaLogin.Location = new Point(169, 64);
             lblTextoFacaLogin.Name = "lblTextoFacaLogin";
             lblTextoFacaLogin.Size = new Size(151, 15);
             lblTextoFacaLogin.TabIndex = 2;
@@ -81,32 +82,36 @@
             // lblEmail
             // 
             lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblEmail.Location = new Point(19, 129);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(36, 15);
+            lblEmail.Size = new Size(39, 16);
             lblEmail.TabIndex = 3;
             lblEmail.Text = "Email";
             // 
             // lblSenha
             // 
             lblSenha.AutoSize = true;
+            lblSenha.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
             lblSenha.Location = new Point(19, 194);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(39, 15);
+            lblSenha.Size = new Size(43, 16);
             lblSenha.TabIndex = 4;
             lblSenha.Text = "Senha";
             // 
             // lblConfirmarSenha
             // 
             lblConfirmarSenha.AutoSize = true;
+            lblConfirmarSenha.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
             lblConfirmarSenha.Location = new Point(19, 258);
             lblConfirmarSenha.Name = "lblConfirmarSenha";
-            lblConfirmarSenha.Size = new Size(95, 15);
+            lblConfirmarSenha.Size = new Size(103, 16);
             lblConfirmarSenha.TabIndex = 5;
             lblConfirmarSenha.Text = "Confirmar senha";
             // 
             // txtEmail
             // 
+            txtEmail.BorderRadius = 10;
             txtEmail.CustomizableEdges = customizableEdges1;
             txtEmail.DefaultText = "";
             txtEmail.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -118,7 +123,7 @@
             txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEmail.Location = new Point(19, 150);
             txtEmail.Name = "txtEmail";
-            txtEmail.PlaceholderText = "";
+            txtEmail.PlaceholderText = "seuemail@cinego.com";
             txtEmail.SelectedText = "";
             txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtEmail.Size = new Size(371, 36);
@@ -126,6 +131,7 @@
             // 
             // txtSenha
             // 
+            txtSenha.BorderRadius = 10;
             txtSenha.CustomizableEdges = customizableEdges3;
             txtSenha.DefaultText = "";
             txtSenha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -137,7 +143,7 @@
             txtSenha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtSenha.Location = new Point(19, 215);
             txtSenha.Name = "txtSenha";
-            txtSenha.PlaceholderText = "";
+            txtSenha.PlaceholderText = "••••••••••••";
             txtSenha.SelectedText = "";
             txtSenha.ShadowDecoration.CustomizableEdges = customizableEdges4;
             txtSenha.Size = new Size(371, 36);
@@ -145,6 +151,7 @@
             // 
             // txtConfirmarSenha
             // 
+            txtConfirmarSenha.BorderRadius = 10;
             txtConfirmarSenha.CustomizableEdges = customizableEdges5;
             txtConfirmarSenha.DefaultText = "";
             txtConfirmarSenha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -156,7 +163,7 @@
             txtConfirmarSenha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtConfirmarSenha.Location = new Point(19, 278);
             txtConfirmarSenha.Name = "txtConfirmarSenha";
-            txtConfirmarSenha.PlaceholderText = "";
+            txtConfirmarSenha.PlaceholderText = "••••••••••••";
             txtConfirmarSenha.SelectedText = "";
             txtConfirmarSenha.ShadowDecoration.CustomizableEdges = customizableEdges6;
             txtConfirmarSenha.Size = new Size(371, 36);
@@ -164,12 +171,13 @@
             // 
             // btnEntrar
             // 
+            btnEntrar.BorderRadius = 10;
             btnEntrar.CustomizableEdges = customizableEdges7;
             btnEntrar.DisabledState.BorderColor = Color.DarkGray;
             btnEntrar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnEntrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnEntrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnEntrar.Font = new Font("Segoe UI", 9F);
+            btnEntrar.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEntrar.ForeColor = Color.White;
             btnEntrar.Location = new Point(90, 328);
             btnEntrar.Name = "btnEntrar";
@@ -208,6 +216,7 @@
             // lblProblemasEmAcessar
             // 
             lblProblemasEmAcessar.AutoSize = true;
+            lblProblemasEmAcessar.ForeColor = SystemColors.ControlDark;
             lblProblemasEmAcessar.Location = new Point(19, 407);
             lblProblemasEmAcessar.Name = "lblProblemasEmAcessar";
             lblProblemasEmAcessar.Size = new Size(329, 15);
@@ -217,6 +226,7 @@
             // lblAPI
             // 
             lblAPI.AutoSize = true;
+            lblAPI.ForeColor = SystemColors.ControlDark;
             lblAPI.Location = new Point(19, 429);
             lblAPI.Name = "lblAPI";
             lblAPI.Size = new Size(40, 15);
@@ -226,6 +236,7 @@
             // lblErro
             // 
             lblErro.AutoSize = true;
+            lblErro.ForeColor = SystemColors.ControlDark;
             lblErro.Location = new Point(19, 450);
             lblErro.Name = "lblErro";
             lblErro.Size = new Size(43, 15);
@@ -252,6 +263,7 @@
             // lblCarregando
             // 
             lblCarregando.AutoSize = true;
+            lblCarregando.ForeColor = SystemColors.ControlDark;
             lblCarregando.Location = new Point(160, 379);
             lblCarregando.Name = "lblCarregando";
             lblCarregando.Size = new Size(88, 15);

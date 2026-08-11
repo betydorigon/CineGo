@@ -60,16 +60,18 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(31, 19);
+            lblTitulo.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(31, 17);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(167, 15);
+            lblTitulo.Size = new Size(254, 21);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "👥 Gerenciamento de Usuários";
             // 
             // lblInfo
             // 
             lblInfo.AutoSize = true;
-            lblInfo.Location = new Point(31, 48);
+            lblInfo.ForeColor = SystemColors.ControlDark;
+            lblInfo.Location = new Point(31, 46);
             lblInfo.Name = "lblInfo";
             lblInfo.Size = new Size(372, 15);
             lblInfo.TabIndex = 0;
@@ -90,11 +92,13 @@
             // 
             // btnAtualizar
             // 
+            btnAtualizar.BorderRadius = 5;
             btnAtualizar.CustomizableEdges = customizableEdges1;
             btnAtualizar.DisabledState.BorderColor = Color.DarkGray;
             btnAtualizar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAtualizar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAtualizar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnAtualizar.FillColor = Color.Goldenrod;
             btnAtualizar.Font = new Font("Segoe UI", 9F);
             btnAtualizar.ForeColor = Color.White;
             btnAtualizar.Location = new Point(581, 12);
@@ -106,11 +110,13 @@
             // 
             // btnExcluir
             // 
+            btnExcluir.BorderRadius = 5;
             btnExcluir.CustomizableEdges = customizableEdges3;
             btnExcluir.DisabledState.BorderColor = Color.DarkGray;
             btnExcluir.DisabledState.CustomBorderColor = Color.DarkGray;
             btnExcluir.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnExcluir.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnExcluir.FillColor = Color.DarkRed;
             btnExcluir.Font = new Font("Segoe UI", 9F);
             btnExcluir.ForeColor = Color.White;
             btnExcluir.Location = new Point(489, 12);
@@ -123,11 +129,13 @@
             // 
             // btnEditar
             // 
+            btnEditar.BorderRadius = 5;
             btnEditar.CustomizableEdges = customizableEdges5;
             btnEditar.DisabledState.BorderColor = Color.DarkGray;
             btnEditar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnEditar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnEditar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnEditar.FillColor = Color.RoyalBlue;
             btnEditar.Font = new Font("Segoe UI", 9F);
             btnEditar.ForeColor = Color.White;
             btnEditar.Location = new Point(400, 12);
@@ -140,11 +148,13 @@
             // 
             // btnNovo
             // 
+            btnNovo.BorderRadius = 5;
             btnNovo.CustomizableEdges = customizableEdges7;
             btnNovo.DisabledState.BorderColor = Color.DarkGray;
             btnNovo.DisabledState.CustomBorderColor = Color.DarkGray;
             btnNovo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnNovo.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnNovo.FillColor = Color.ForestGreen;
             btnNovo.Font = new Font("Segoe UI", 9F);
             btnNovo.ForeColor = Color.White;
             btnNovo.Location = new Point(276, 12);
@@ -157,11 +167,13 @@
             // 
             // btnPesquisar
             // 
+            btnPesquisar.BorderRadius = 5;
             btnPesquisar.CustomizableEdges = customizableEdges9;
             btnPesquisar.DisabledState.BorderColor = Color.DarkGray;
             btnPesquisar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnPesquisar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnPesquisar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnPesquisar.FillColor = Color.RoyalBlue;
             btnPesquisar.Font = new Font("Segoe UI", 9F);
             btnPesquisar.ForeColor = Color.White;
             btnPesquisar.Location = new Point(180, 12);
@@ -174,6 +186,7 @@
             // 
             // txtPesquisa
             // 
+            txtPesquisa.BorderRadius = 5;
             txtPesquisa.CustomizableEdges = customizableEdges11;
             txtPesquisa.DefaultText = "";
             txtPesquisa.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);

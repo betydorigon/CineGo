@@ -47,14 +47,16 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
+            lblTitulo.Font = new Font("Yu Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitulo.Location = new Point(41, 21);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(76, 15);
+            lblTitulo.Size = new Size(104, 19);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "👤 Meu Perfil";
             // 
             // card
             // 
+            card.BackColor = Color.White;
             card.Controls.Add(sep);
             card.Controls.Add(btnAvatar);
             card.Controls.Add(lblEmailLabel);
@@ -84,9 +86,10 @@
             btnAvatar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAvatar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAvatar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            btnAvatar.Font = new Font("Segoe UI", 9F);
+            btnAvatar.FillColor = Color.RoyalBlue;
+            btnAvatar.Font = new Font("Yu Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAvatar.ForeColor = Color.White;
-            btnAvatar.Location = new Point(254, 9);
+            btnAvatar.Location = new Point(248, 20);
             btnAvatar.Name = "btnAvatar";
             btnAvatar.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -97,74 +100,86 @@
             // lblEmailLabel
             // 
             lblEmailLabel.AutoSize = true;
+            lblEmailLabel.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
+            lblEmailLabel.ForeColor = SystemColors.ControlDark;
             lblEmailLabel.Location = new Point(38, 202);
             lblEmailLabel.Name = "lblEmailLabel";
-            lblEmailLabel.Size = new Size(46, 15);
+            lblEmailLabel.Size = new Size(50, 16);
             lblEmailLabel.TabIndex = 0;
             lblEmailLabel.Text = "E-MAIL";
             // 
             // lblApiLabel
             // 
             lblApiLabel.AutoSize = true;
+            lblApiLabel.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
+            lblApiLabel.ForeColor = SystemColors.ControlDark;
             lblApiLabel.Location = new Point(38, 255);
             lblApiLabel.Name = "lblApiLabel";
-            lblApiLabel.Size = new Size(98, 15);
+            lblApiLabel.Size = new Size(107, 16);
             lblApiLabel.TabIndex = 0;
             lblApiLabel.Text = "API CONECTADA";
             // 
             // lblRolesValor
             // 
             lblRolesValor.AutoSize = true;
+            lblRolesValor.Font = new Font("Yu Gothic", 9F);
             lblRolesValor.Location = new Point(38, 335);
             lblRolesValor.Name = "lblRolesValor";
-            lblRolesValor.Size = new Size(16, 15);
+            lblRolesValor.Size = new Size(16, 16);
             lblRolesValor.TabIndex = 0;
             lblRolesValor.Text = "...";
             // 
             // lblRolesLabel
             // 
             lblRolesLabel.AutoSize = true;
+            lblRolesLabel.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
+            lblRolesLabel.ForeColor = SystemColors.ControlDark;
             lblRolesLabel.Location = new Point(38, 311);
             lblRolesLabel.Name = "lblRolesLabel";
-            lblRolesLabel.Size = new Size(74, 15);
+            lblRolesLabel.Size = new Size(87, 16);
             lblRolesLabel.TabIndex = 0;
             lblRolesLabel.Text = "PERMISSÕES";
             // 
             // lblApiValor
             // 
             lblApiValor.AutoSize = true;
+            lblApiValor.Font = new Font("Yu Gothic", 9F);
             lblApiValor.Location = new Point(38, 281);
             lblApiValor.Name = "lblApiValor";
-            lblApiValor.Size = new Size(16, 15);
+            lblApiValor.Size = new Size(16, 16);
             lblApiValor.TabIndex = 0;
             lblApiValor.Text = "...";
             // 
             // lblEmailValor
             // 
             lblEmailValor.AutoSize = true;
+            lblEmailValor.Font = new Font("Yu Gothic", 9F);
             lblEmailValor.Location = new Point(38, 226);
             lblEmailValor.Name = "lblEmailValor";
-            lblEmailValor.Size = new Size(16, 15);
+            lblEmailValor.Size = new Size(16, 16);
             lblEmailValor.TabIndex = 0;
             lblEmailValor.Text = "...";
             // 
             // lblBagde
             // 
             lblBagde.AutoSize = true;
-            lblBagde.BackColor = Color.DodgerBlue;
-            lblBagde.Location = new Point(238, 150);
+            lblBagde.BackColor = SystemColors.Highlight;
+            lblBagde.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBagde.ForeColor = Color.White;
+            lblBagde.Location = new Point(233, 150);
             lblBagde.Name = "lblBagde";
             lblBagde.Padding = new Padding(50, 10, 50, 10);
-            lblBagde.Size = new Size(134, 35);
+            lblBagde.Size = new Size(138, 36);
             lblBagde.TabIndex = 0;
             lblBagde.Text = "Perfil";
             // 
             // lblNome
             // 
             lblNome.AutoSize = true;
-            lblNome.Location = new Point(280, 124);
+            lblNome.Font = new Font("Yu Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNome.Location = new Point(267, 123);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(47, 15);
+            lblNome.Size = new Size(70, 21);
             lblNome.TabIndex = 0;
             lblNome.Text = "Usuário";
             // 

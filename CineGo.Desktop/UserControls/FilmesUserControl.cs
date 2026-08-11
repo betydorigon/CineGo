@@ -78,7 +78,6 @@ namespace CineGo.Desktop.UserControls
                     f.Id,
                     f.Titulo,
                     f.CategoryName,
-                    f.Classificacao,
                     f.Duracao,
                     f.RealeseYear,
                     f.CreatedAt.ToString("dd/MM/yyyy HH:mm"));
