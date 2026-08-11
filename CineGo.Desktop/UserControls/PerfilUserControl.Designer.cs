@@ -176,6 +176,7 @@
             Controls.Add(lblTitulo);
             Name = "PerfilUserControl";
             Size = new Size(711, 438);
+            Load += PerfilUserControl_Load;
             card.ResumeLayout(false);
             card.PerformLayout();
             ResumeLayout(false);
