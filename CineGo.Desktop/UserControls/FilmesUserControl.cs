@@ -89,9 +89,9 @@ namespace CineGo.Desktop.UserControls
         private async void btnNovo_Click(object sender, EventArgs e)
         {
             using var form = new FilmeFormDialog(_categorias, null);
-            if (form.ShowDialog() == DialogResult.OK && form.filmeDto != null)
+            if (form.ShowDialog() == DialogResult.OK && form.FilmeDto != null)
             {
-                var (success, _, error) = await _filmeService.CreateAsync(form.filmeDto);
+                var (success, _, error) = await _filmeService.CreateAsync(form.FilmeDto);
                 if (success)
                 {
                     MessageBox.Show("✅ Filme criado com sucesso!",
