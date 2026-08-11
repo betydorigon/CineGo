@@ -37,16 +37,12 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             lblTituloBemVindo = new Label();
             lblTextoFacaLogin = new Label();
             lblEmail = new Label();
             lblSenha = new Label();
-            lblConfirmarSenha = new Label();
             txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             txtSenha = new Guna.UI2.WinForms.Guna2TextBox();
-            txtConfirmarSenha = new Guna.UI2.WinForms.Guna2TextBox();
             btnEntrar = new Guna.UI2.WinForms.Guna2Button();
             pbLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             pnlSeparador = new Panel();
@@ -99,16 +95,6 @@
             lblSenha.TabIndex = 4;
             lblSenha.Text = "Senha";
             // 
-            // lblConfirmarSenha
-            // 
-            lblConfirmarSenha.AutoSize = true;
-            lblConfirmarSenha.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
-            lblConfirmarSenha.Location = new Point(19, 258);
-            lblConfirmarSenha.Name = "lblConfirmarSenha";
-            lblConfirmarSenha.Size = new Size(103, 16);
-            lblConfirmarSenha.TabIndex = 5;
-            lblConfirmarSenha.Text = "Confirmar senha";
-            // 
             // txtEmail
             // 
             txtEmail.BorderRadius = 10;
@@ -149,51 +135,31 @@
             txtSenha.Size = new Size(371, 36);
             txtSenha.TabIndex = 7;
             // 
-            // txtConfirmarSenha
-            // 
-            txtConfirmarSenha.BorderRadius = 10;
-            txtConfirmarSenha.CustomizableEdges = customizableEdges5;
-            txtConfirmarSenha.DefaultText = "";
-            txtConfirmarSenha.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            txtConfirmarSenha.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            txtConfirmarSenha.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            txtConfirmarSenha.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            txtConfirmarSenha.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtConfirmarSenha.Font = new Font("Segoe UI", 9F);
-            txtConfirmarSenha.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            txtConfirmarSenha.Location = new Point(19, 278);
-            txtConfirmarSenha.Name = "txtConfirmarSenha";
-            txtConfirmarSenha.PlaceholderText = "••••••••••••";
-            txtConfirmarSenha.SelectedText = "";
-            txtConfirmarSenha.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            txtConfirmarSenha.Size = new Size(371, 36);
-            txtConfirmarSenha.TabIndex = 8;
-            // 
             // btnEntrar
             // 
             btnEntrar.BorderRadius = 10;
-            btnEntrar.CustomizableEdges = customizableEdges7;
+            btnEntrar.CustomizableEdges = customizableEdges5;
             btnEntrar.DisabledState.BorderColor = Color.DarkGray;
             btnEntrar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnEntrar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnEntrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnEntrar.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEntrar.ForeColor = Color.White;
-            btnEntrar.Location = new Point(89, 328);
+            btnEntrar.Location = new Point(87, 299);
             btnEntrar.Name = "btnEntrar";
-            btnEntrar.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnEntrar.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnEntrar.Size = new Size(229, 45);
             btnEntrar.TabIndex = 9;
             btnEntrar.Text = "Entrar";
-            btnEntrar.Click += this.btnEntrar_Click;
+            btnEntrar.Click += btnEntrar_Click_1;
             // 
             // pbLogo
             // 
-            pbLogo.CustomizableEdges = customizableEdges9;
+            pbLogo.CustomizableEdges = customizableEdges7;
             pbLogo.ImageRotate = 0F;
             pbLogo.Location = new Point(19, 12);
             pbLogo.Name = "pbLogo";
-            pbLogo.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            pbLogo.ShadowDecoration.CustomizableEdges = customizableEdges8;
             pbLogo.Size = new Size(141, 90);
             pbLogo.TabIndex = 10;
             pbLogo.TabStop = false;
@@ -254,7 +220,7 @@
             btnFechar.ForeColor = Color.White;
             btnFechar.Location = new Point(364, 12);
             btnFechar.Name = "btnFechar";
-            btnFechar.ShadowDecoration.CustomizableEdges = customizableEdges11;
+            btnFechar.ShadowDecoration.CustomizableEdges = customizableEdges9;
             btnFechar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             btnFechar.Size = new Size(30, 30);
             btnFechar.TabIndex = 12;
@@ -265,7 +231,7 @@
             // 
             lblCarregando.AutoSize = true;
             lblCarregando.ForeColor = SystemColors.ControlDark;
-            lblCarregando.Location = new Point(160, 379);
+            lblCarregando.Location = new Point(158, 350);
             lblCarregando.Name = "lblCarregando";
             lblCarregando.Size = new Size(88, 15);
             lblCarregando.TabIndex = 13;
@@ -282,13 +248,11 @@
             Controls.Add(pnlSeparador);
             Controls.Add(pbLogo);
             Controls.Add(btnEntrar);
-            Controls.Add(txtConfirmarSenha);
             Controls.Add(txtSenha);
             Controls.Add(txtEmail);
             Controls.Add(lblErro);
             Controls.Add(lblAPI);
             Controls.Add(lblProblemasEmAcessar);
-            Controls.Add(lblConfirmarSenha);
             Controls.Add(lblSenha);
             Controls.Add(lblEmail);
             Controls.Add(lblTextoFacaLogin);
@@ -296,7 +260,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginForm";
             Text = "LoginForm";
-            Load += LoginForm_Load_1;
+            Load += LoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -307,10 +271,8 @@
         private Label lblTextoFacaLogin;
         private Label lblEmail;
         private Label lblSenha;
-        private Label lblConfirmarSenha;
         private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtSenha;
-        private Guna.UI2.WinForms.Guna2TextBox txtConfirmarSenha;
         private Guna.UI2.WinForms.Guna2Button btnEntrar;
         private Guna.UI2.WinForms.Guna2PictureBox pbLogo;
         private Panel pnlSeparador;

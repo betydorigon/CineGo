@@ -13,27 +13,57 @@ namespace CineGo.Desktop.Forms
 {
     public partial class LoginForm : Form
     {
-        private AuthApiService _authService = null;
+        private AuthApiService _authService = null!;
         public LoginForm()
         {
             InitializeComponent();
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
+
+
+
+
+        private void ExibirErro(string mensagem)
         {
-            if (DesignMode) return;
+            if (string.IsNullOrEmpty(mensagem))
+            {
+                lblErro.Text = string.Empty;
+                lblErro.Visible = false;
+            }
+            else
+            {
+                lblErro.Text = mensagem;
+                lblErro.Visible = true;
+            }
+        }
 
-            _authService = new AuthApiService();
+        private void SetCarregando(bool carregando)
+        {
+            btnEntrar.Enabled = !carregando;
+            txtEmail.Enabled = !carregando;
+            txtSenha.Enabled = !carregando;
+            lblCarregando.Visible = carregando;
 
-            lblAPI.Text = $"Versão {AppConfig.Version} | ©️ {DateTime.Now.Year} SENAC-SMP";
+            if (carregando)
+            {
+                btnEntrar.Text = "Carregando...";
+                lblErro.Visible = false;
 
-            txtEmail.Text = "Admin@CineGo.com";
-            txtSenha.Text = "Admin@123";
+            }
+            else
+            {
+                btnEntrar.Text = "Entrar";
+            }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
 
 
 
-        private async void btnEntrar_Click(object sender, EventArgs e)
+        private async void btnEntrar_Click_1(object sender, EventArgs e)
         {
             ExibirErro(string.Empty);
 
@@ -91,50 +121,18 @@ namespace CineGo.Desktop.Forms
                 SetCarregando(false);
             }
 
-
         }
 
-        private void ExibirErro(string mensagem)
+        private void LoginForm_Load(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(mensagem))
-            {
-                lblErro.Text = string.Empty;
-                lblErro.Visible = false;
-            }
-            else
-            {
-                lblErro.Text = mensagem;
-                lblErro.Visible = true;
-            }
-        }
+            if (DesignMode) return;
 
-        private void SetCarregando(bool carregando)
-        {
-            btnEntrar.Enabled = !carregando;
-            txtEmail.Enabled = !carregando;
-            txtSenha.Enabled = !carregando;
-            lblCarregando.Visible = carregando;
+            _authService = new AuthApiService();
 
-            if (carregando)
-            {
-                btnEntrar.Text = "Carregando...";
-                lblErro.Visible = false;
+            lblAPI.Text = $"Versão {AppConfig.Version} | ©️ {DateTime.Now.Year} SENAC-SMP";
 
-            }
-            else
-            {
-                btnEntrar.Text = "Entrar";
-            }
-        }
-
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
-
-        private void LoginForm_Load_1(object sender, EventArgs e)
-        {
-
+            txtEmail.Text = "Admin@CineGo.com";
+            txtSenha.Text = "Admin@123";
         }
     }
 }
