@@ -78,7 +78,7 @@ namespace CineGo.Desktop.UserControls
             if (!int.TryParse(cellValue.ToString(), out var id)) return null;
 
             // Procura no cache de categorias carregadas
-            return _categoria.FirstOrDefault(c => c.Id == id);
+            return _categorias.FirstOrDefault(c => c.Id == id);
         }
 
         private void btnNova_Click(object sender, EventArgs e) => MostrarFormulario(null);
@@ -135,12 +135,7 @@ namespace CineGo.Desktop.UserControls
             }
         }
 
-        private CategoriaResponseDto? ObterCategoriaSelecionada()
-        {
-            if (gridCategorias.SelectedRows.Count == 0) return null;
-            var id = Convert.ToInt32(gridCategorias.SelectedRows[0].Cells["colId"].Value);
-            return _categorias.FirstOrDefault(c => c.Id == id);
-        }
+
 
         private async Task btnAtualizar_Click(object? sender, EventArgs e) => await CarregarDadosAsync();
 

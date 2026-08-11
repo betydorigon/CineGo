@@ -83,23 +83,24 @@
             // 
             // btnAtualizar
             // 
-            btnAtualizar.CustomizableEdges = customizableEdges13;
+            btnAtualizar.CustomizableEdges = customizableEdges1;
             btnAtualizar.DisabledState.BorderColor = Color.DarkGray;
             btnAtualizar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnAtualizar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnAtualizar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnAtualizar.Font = new Font("Segoe UI", 9F);
             btnAtualizar.ForeColor = Color.White;
-            btnAtualizar.Location = new Point(587, 18);
+            btnAtualizar.Location = new Point(608, 18);
             btnAtualizar.Name = "btnAtualizar";
-            btnAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges14;
+            btnAtualizar.ShadowDecoration.CustomizableEdges = customizableEdges2;
             btnAtualizar.Size = new Size(89, 36);
             btnAtualizar.TabIndex = 1;
             btnAtualizar.Text = "🔃 Atualizar";
+            btnAtualizar.Click += btnAtualizar_Click;
             // 
             // btnExcluir
             // 
-            btnExcluir.CustomizableEdges = customizableEdges15;
+            btnExcluir.CustomizableEdges = customizableEdges3;
             btnExcluir.DisabledState.BorderColor = Color.DarkGray;
             btnExcluir.DisabledState.CustomBorderColor = Color.DarkGray;
             btnExcluir.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -108,14 +109,14 @@
             btnExcluir.ForeColor = Color.White;
             btnExcluir.Location = new Point(492, 18);
             btnExcluir.Name = "btnExcluir";
-            btnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges16;
+            btnExcluir.ShadowDecoration.CustomizableEdges = customizableEdges4;
             btnExcluir.Size = new Size(89, 36);
             btnExcluir.TabIndex = 1;
             btnExcluir.Text = "🗑️ Excluir";
             // 
             // btnEditar
             // 
-            btnEditar.CustomizableEdges = customizableEdges17;
+            btnEditar.CustomizableEdges = customizableEdges5;
             btnEditar.DisabledState.BorderColor = Color.DarkGray;
             btnEditar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnEditar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -124,14 +125,14 @@
             btnEditar.ForeColor = Color.White;
             btnEditar.Location = new Point(397, 18);
             btnEditar.Name = "btnEditar";
-            btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges18;
+            btnEditar.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnEditar.Size = new Size(89, 36);
             btnEditar.TabIndex = 1;
             btnEditar.Text = "✏️ Editar";
             // 
             // btnNovo
             // 
-            btnNovo.CustomizableEdges = customizableEdges19;
+            btnNovo.CustomizableEdges = customizableEdges7;
             btnNovo.DisabledState.BorderColor = Color.DarkGray;
             btnNovo.DisabledState.CustomBorderColor = Color.DarkGray;
             btnNovo.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -140,14 +141,15 @@
             btnNovo.ForeColor = Color.White;
             btnNovo.Location = new Point(286, 18);
             btnNovo.Name = "btnNovo";
-            btnNovo.ShadowDecoration.CustomizableEdges = customizableEdges20;
+            btnNovo.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnNovo.Size = new Size(105, 36);
             btnNovo.TabIndex = 1;
             btnNovo.Text = "+ Novo Filme";
+            btnNovo.Click += btnNovo_Click;
             // 
-            // btnEditar
+            // btnPesquisar
             // 
-            btnPesquisar.CustomizableEdges = customizableEdges21;
+            btnPesquisar.CustomizableEdges = customizableEdges9;
             btnPesquisar.DisabledState.BorderColor = Color.DarkGray;
             btnPesquisar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnPesquisar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
@@ -156,14 +158,14 @@
             btnPesquisar.ForeColor = Color.White;
             btnPesquisar.Location = new Point(184, 18);
             btnPesquisar.Name = "btnPesquisar";
-            btnPesquisar.ShadowDecoration.CustomizableEdges = customizableEdges22;
+            btnPesquisar.ShadowDecoration.CustomizableEdges = customizableEdges10;
             btnPesquisar.Size = new Size(89, 36);
             btnPesquisar.TabIndex = 1;
             btnPesquisar.Text = "Pesquisar";
             // 
             // txtPesquisa
             // 
-            txtPesquisa.CustomizableEdges = customizableEdges23;
+            txtPesquisa.CustomizableEdges = customizableEdges11;
             txtPesquisa.DefaultText = "";
             txtPesquisa.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             txtPesquisa.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -176,7 +178,7 @@
             txtPesquisa.Name = "txtPesquisa";
             txtPesquisa.PlaceholderText = "🔎 Pesquisar por título...";
             txtPesquisa.SelectedText = "";
-            txtPesquisa.ShadowDecoration.CustomizableEdges = customizableEdges24;
+            txtPesquisa.ShadowDecoration.CustomizableEdges = customizableEdges12;
             txtPesquisa.Size = new Size(172, 36);
             txtPesquisa.TabIndex = 0;
             // 
