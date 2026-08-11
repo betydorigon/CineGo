@@ -14,5 +14,10 @@ namespace CineGo.Desktop.Forms
         {
             InitializeComponent();
         }
+
+        private void FilmeFormDialog_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
