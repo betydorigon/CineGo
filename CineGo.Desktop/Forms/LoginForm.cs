@@ -23,7 +23,7 @@ namespace CineGo.Desktop.Forms
         {
             if (DesignMode) return;
 
-            _authServuce = AuthService();
+            _authService = new AuthApiService();
 
             lblAPI.Text = $"Versão {AppConfig.Version} | ©️ {DateTime.Now.Year} SENAC-SMP";
 
@@ -61,7 +61,7 @@ namespace CineGo.Desktop.Forms
 
                 if (success && user != null)
                 {
-                    SessioManager.Instance.SetUser(user);
+                    SessionManager.Instance.SetUser(user);
 
                     this.Hide();
 
@@ -109,7 +109,7 @@ namespace CineGo.Desktop.Forms
             }
         }
 
-        private void SetCarregando(bool val)
+        private void SetCarregando(bool carregando)
         {
             btnEntrar.Enabled = !carregando;
             txtEmail.Enabled = !carregando;

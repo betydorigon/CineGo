@@ -19,9 +19,8 @@
 
 using CineGo.Desktop.DTOs;
 using CineGo.Desktop.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Text;
+
+
 
 namespace CineGo.Desktop.Services
 {
