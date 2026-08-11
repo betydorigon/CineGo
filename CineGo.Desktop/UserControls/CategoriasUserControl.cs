@@ -1,4 +1,5 @@
 ﻿using CineGo.Desktop.DTOs;
+using CineGo.Desktop.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +7,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace CineGo.Desktop.UserControls
 {
@@ -61,6 +64,23 @@ namespace CineGo.Desktop.UserControls
             txtNome.Clear();
         }
 
+        // Novo: retorna a categoria selecionada no grid (ou null)
+        private CategoriaResponseDto? ObterCategoriaSelecionada()
+        {
+            // Tenta usar a linha atual (CurrentRow). Pode ajustar para SelectedRows se preferir seleção por múltiplas linhas.
+            var row = gridCategorias.CurrentRow;
+            if (row == null) return null;
+
+            // Busca a célula pelo nome da coluna definido no Designer: "colID"
+            var cellValue = row.Cells["colID"]?.Value;
+            if (cellValue == null) return null;
+
+            if (!int.TryParse(cellValue.ToString(), out var id)) return null;
+
+            // Procura no cache de categorias carregadas
+            return _categoria.FirstOrDefault(c => c.Id == id);
+        }
+
         private void btnNova_Click(object sender, EventArgs e) => MostrarFormulario(null);
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -68,7 +88,7 @@ namespace CineGo.Desktop.UserControls
             var cat = ObterCategoriaSelecionada();
             if (cat == null)
             {
-                MessageBox.Show("Seleciona ua, categoria para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Selecione uma categoria para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             MostrarFormulario(cat);
@@ -87,7 +107,7 @@ namespace CineGo.Desktop.UserControls
             if (cat.FilmesCount > 0)
             {
                 MessageBox.Show(
-                    $"A categoria \"{cat.Name}\" possui {cat.FilmesCount} filme(s) vinculado(s).\nRemova os games antes de excluir.",
+                    $"A categoria \"{cat.Name}\" possui {cat.FilmesCount} filme(s) vinculado(s).\nRemova os filmes antes de excluir.",
                     "Não é possível excluir",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -111,8 +131,6 @@ namespace CineGo.Desktop.UserControls
             {
                 MessageBox.Show($"❌ {error}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
         private async Task btnAtualizar_Click(object? sender, EventArgs e) => await CarregarDadosAsync();
@@ -140,7 +158,18 @@ namespace CineGo.Desktop.UserControls
             {
                 var dto = new UpdateCategoriaDto { Name = txtNome.Text.Trim() };
                 var result = await _CategoriaService.UpdateAsync(_editandoId.Value, dto);
+                success = result.Success;
+                error = result.ErrorMessage;
+            }
+            if (success)
+            {
+                MessageBox.Show("✅ Categoria salva com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                OcultarFormulario();
+                await CarregarDadosAsync();
             }
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e) => OcultarFormulario();
+       
     }
 }
