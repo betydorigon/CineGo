@@ -249,7 +249,6 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FilmeFormDialog";
             Text = "FilmeFormDialog";
-            Load += FilmeFormDialog_Load;
             ResumeLayout(false);
             PerformLayout();
         }
