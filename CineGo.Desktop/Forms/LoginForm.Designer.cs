@@ -185,6 +185,7 @@
             btnEntrar.Size = new Size(229, 45);
             btnEntrar.TabIndex = 9;
             btnEntrar.Text = "Entrar";
+            btnEntrar.Click += this.btnEntrar_Click;
             // 
             // pbLogo
             // 
