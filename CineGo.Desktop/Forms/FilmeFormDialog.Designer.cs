@@ -46,7 +46,6 @@
             lblCampAno = new Label();
             lblCampCover = new Label();
             lblCampCategoria = new Label();
-            lblCampClass = new Label();
             btnSalvar = new Guna.UI2.WinForms.Guna2Button();
             btnCancelar = new Guna.UI2.WinForms.Guna2Button();
             txtTitulo = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,7 +53,6 @@
             txtAno = new Guna.UI2.WinForms.Guna2TextBox();
             txtCoverUrl = new Guna.UI2.WinForms.Guna2TextBox();
             cmbCategoria = new ComboBox();
-            cmbClassificação = new ComboBox();
             SuspendLayout();
             // 
             // lblTituloForm
@@ -111,15 +109,6 @@
             lblCampCategoria.TabIndex = 0;
             lblCampCategoria.Text = "CATEGORIA *";
             // 
-            // lblCampClass
-            // 
-            lblCampClass.AutoSize = true;
-            lblCampClass.Location = new Point(34, 423);
-            lblCampClass.Name = "lblCampClass";
-            lblCampClass.Size = new Size(102, 15);
-            lblCampClass.TabIndex = 0;
-            lblCampClass.Text = "CLASSIFICAÇÃO *";
-            // 
             // btnSalvar
             // 
             btnSalvar.CustomizableEdges = customizableEdges1;
@@ -135,6 +124,7 @@
             btnSalvar.Size = new Size(180, 45);
             btnSalvar.TabIndex = 1;
             btnSalvar.Text = "🗃️ Salvar";
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnCancelar
             // 
@@ -151,6 +141,7 @@
             btnCancelar.Size = new Size(180, 45);
             btnCancelar.TabIndex = 1;
             btnCancelar.Text = "Cancelar";
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txtTitulo
             // 
@@ -237,20 +228,11 @@
             cmbCategoria.Size = new Size(450, 23);
             cmbCategoria.TabIndex = 3;
             // 
-            // cmbClassificação
-            // 
-            cmbClassificação.FormattingEnabled = true;
-            cmbClassificação.Location = new Point(34, 441);
-            cmbClassificação.Name = "cmbClassificação";
-            cmbClassificação.Size = new Size(450, 23);
-            cmbClassificação.TabIndex = 3;
-            // 
             // FilmeFormDialog
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(520, 580);
-            Controls.Add(cmbClassificação);
             Controls.Add(cmbCategoria);
             Controls.Add(txtSinopse);
             Controls.Add(txtCoverUrl);
@@ -258,7 +240,6 @@
             Controls.Add(txtTitulo);
             Controls.Add(btnCancelar);
             Controls.Add(btnSalvar);
-            Controls.Add(lblCampClass);
             Controls.Add(lblCampCategoria);
             Controls.Add(lblCampCover);
             Controls.Add(lblCampAno);
@@ -280,7 +261,6 @@
         private Label lblCampAno;
         private Label lblCampCover;
         private Label lblCampCategoria;
-        private Label lblCampClass;
         private Guna.UI2.WinForms.Guna2Button btnSalvar;
         private Guna.UI2.WinForms.Guna2Button btnCancelar;
         private Guna.UI2.WinForms.Guna2TextBox txtTitulo;
@@ -288,6 +268,5 @@
         private Guna.UI2.WinForms.Guna2TextBox txtAno;
         private Guna.UI2.WinForms.Guna2TextBox txtCoverUrl;
         private ComboBox cmbCategoria;
-        private ComboBox cmbClassificação;
     }
 }

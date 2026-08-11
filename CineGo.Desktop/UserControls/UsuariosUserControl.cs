@@ -1,6 +1,7 @@
 ﻿using CineGo.Desktop.DTOs;
 using CineGo.Desktop.Helpers;
 using CineGo.Desktop.Services;
+using CineGo.Desktop.Forms;
 using System.Linq;
 using System.Threading.Tasks;
 using System;
