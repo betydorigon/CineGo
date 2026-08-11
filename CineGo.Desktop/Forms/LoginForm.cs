@@ -29,6 +29,7 @@ namespace CineGo.Desktop.Forms
 
             txtEmail.Text = "Admin@CineGo.com";
             txtSenha.Text = "Admin@123";
+            txtConfirmarSenha.Text = "Admin@123";
 
         }
 
