@@ -50,11 +50,11 @@ namespace CineGo.Desktop.UserControls
             try
             {
                 var tarefaUsuarios = _usuariosService.GetAllAsync();
-                var tarefaPerfis = _usuariosService.GetPerfisAsync();
-                await Task.WhenAll(tarefaUsuarios, tarefaPerfis);
+                
+                await Task.WhenAll(tarefaUsuarios);
 
                 _todosUsuarios = tarefaUsuarios.Result;
-                _perfis = tarefaPerfis.Result;
+                
 
                 PopularGrid(_todosUsuarios);
             }

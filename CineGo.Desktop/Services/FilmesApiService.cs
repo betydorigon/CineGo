@@ -65,7 +65,7 @@ namespace CineGo.Desktop.Services
         /// <param name="dto">Dados do filme a ser criado</param>
         /// <returns>Game criado ou null em caso de erro</returns>
         public async Task<(bool Success, FilmeResponseDto? Game, string ErrorMessage)>
-            CreateAsync(CreateGameDto dto)
+            CreateAsync(CreateFilmeDto dto)
         {
             return await _http.PostAsync<FilmeResponseDto>("/api/filmes", dto);
         }
@@ -75,7 +75,7 @@ namespace CineGo.Desktop.Services
         /// Requer perfil Admin (verificado pela API).
         /// </summary>
         public async Task<(bool Success, FilmeResponseDto? Game, string ErrorMessage)>
-            UpdateAsync(int id, UpdateGameDto dto)
+            UpdateAsync(int id, UpdateFilmeDto dto)
         {
             return await _http.PutAsync<FilmeResponseDto>($"/api/filmes/{id}", dto);
         }
