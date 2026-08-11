@@ -55,7 +55,7 @@ namespace CineGo.Desktop.Forms
             InitializeComponent();
         }
 
-<<<<<<< HEAD
+        ///<<<<<<< HEAD
         /// <summary>
         /// Construtor de produção com categorias e game opcional.
         /// </summary>

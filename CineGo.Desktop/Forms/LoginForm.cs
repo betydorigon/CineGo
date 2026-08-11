@@ -29,26 +29,24 @@ namespace CineGo.Desktop.Forms
 
             txtEmail.Text = "Admin@CineGo.com";
             txtSenha.Text = "Admin@123";
-            txtConfirmarSenha.Text = "Admin@123";
-
         }
 
 
 
-        private async Task btnEntrar_Click(object sender, EventArgs e)
+        private async void btnEntrar_Click(object sender, EventArgs e)
         {
             ExibirErro(string.Empty);
 
             if (string.IsNullOrWhiteSpace(txtEmail.Text))
             {
-                ExibirErro("Informe seu E-mail");
+                ExibirErro("⚠️ Informe seu E-mail");
                 txtEmail.Focus();
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(txtSenha.Text))
             {
-                ExibirErro("Informe sua Senha");
+                ExibirErro("⚠️ Informe sua Senha");
                 txtSenha.Focus();
                 return;
             }
@@ -66,7 +64,7 @@ namespace CineGo.Desktop.Forms
 
                     this.Hide();
 
-                    var mainForm = new MainForm();
+                    using var mainForm = new MainForm();
                     mainForm.ShowDialog();
 
                     this.Close();
@@ -74,7 +72,7 @@ namespace CineGo.Desktop.Forms
                 else
                 {
 
-                    ExibirErro($"X{errorMessage}");
+                    ExibirErro($"❌ {errorMessage}");
                     MessageBox.Show($"{errorMessage}");
                 }
             }
