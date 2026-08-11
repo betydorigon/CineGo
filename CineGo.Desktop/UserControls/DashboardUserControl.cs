@@ -10,9 +10,6 @@ using CineGo.Desktop.Helpers;
 
 namespace CineGo.Desktop.UserControls
 {
-
-
-
     public partial class DashboardUserControl : UserControl
     {
     private FilmesApiService _filmeService = null;

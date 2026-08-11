@@ -132,5 +132,10 @@ namespace CineGo.Desktop.Forms
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void LoginForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

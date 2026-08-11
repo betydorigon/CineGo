@@ -283,6 +283,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginForm";
             Text = "LoginForm";
+            Load += LoginForm_Load_1;
             ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
             ResumeLayout(false);
             PerformLayout();
