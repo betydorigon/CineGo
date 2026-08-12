@@ -134,7 +134,7 @@ namespace CineGo.Desktop.Forms
             {
                 FilmeDto = new CreateFilmeDto
                 {
-                    Name = txtTitulo.Text.Trim(),
+                    Titulo = txtTitulo.Text.Trim(),
                     Sinopse = txtSinopse.Text.Trim(),
                     RealeseYear = ano,
                     CoverImageUrl = txtCoverUrl.Text.Trim(),
@@ -146,7 +146,7 @@ namespace CineGo.Desktop.Forms
             {
                 UpdateDto = new UpdateFilmeDto
                 {
-                    Name = txtTitulo.Text.Trim(),
+                    Titulo = txtTitulo.Text.Trim(),
                     Sinopse = txtSinopse.Text.Trim(),
                     RealeseYear = ano,
                     CoverImageUrl = txtCoverUrl.Text.Trim(),
@@ -177,7 +177,7 @@ namespace CineGo.Desktop.Forms
             cmbCategoria.Items.Add("Selecione uma categoria...");
             foreach (var cat in _categorias)
                 cmbCategoria.Items.Add(cat.Name);
-            cmbCategoria.SelectedIndex = 0;
+            cmbCategoria.SelectedIndex = 1;
 
 
 
