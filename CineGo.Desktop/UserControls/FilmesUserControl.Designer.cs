@@ -201,6 +201,7 @@
             gridFilmes.Name = "gridFilmes";
             gridFilmes.Size = new Size(684, 293);
             gridFilmes.TabIndex = 2;
+            gridFilmes.CellContentClick += gridFilmes_CellContentClick;
             // 
             // colId
             // 

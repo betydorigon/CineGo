@@ -131,7 +131,7 @@ namespace CineGo.Desktop.Forms
 
             lblAPI.Text = $"Versão {AppConfig.Version} | ©️ {DateTime.Now.Year} SENAC-SMP";
 
-            txtEmail.Text = "Admin@CineGo.com";
+            txtEmail.Text = "Admin@CineGo.com.br";
             txtSenha.Text = "Admin@123";
         }
     }
