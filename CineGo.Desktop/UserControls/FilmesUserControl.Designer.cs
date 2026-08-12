@@ -172,6 +172,7 @@
             btnPesquisar.Size = new Size(89, 36);
             btnPesquisar.TabIndex = 1;
             btnPesquisar.Text = "Pesquisar";
+            btnPesquisar.Click += btnPesquisar_Click;
             // 
             // txtPesquisa
             // 

@@ -115,7 +115,7 @@ namespace CineGo.Desktop.UserControls
             var filme = ObterFilmeSelecionado();
             if (filme == null)
             {
-                MessageBox.Show($"Selecione um game para editar.",
+                MessageBox.Show($"Selecione um filme para editar.",
                       "Aviso",
                       MessageBoxButtons.OK,
                       MessageBoxIcon.Warning);
@@ -127,7 +127,7 @@ namespace CineGo.Desktop.UserControls
                 var (success, _, error) = await _filmeService.UpdateAsync(filme.Id, form.UpdateDto);
                 if (success)
                 {
-                    MessageBox.Show("✅ Game atualizado com sucesso!",
+                    MessageBox.Show("✅ Filme atualizado com sucesso!",
                                             "Sucesso",
                                             MessageBoxButtons.OK,
                                             MessageBoxIcon.Information);
@@ -156,7 +156,7 @@ namespace CineGo.Desktop.UserControls
             var filme = ObterFilmeSelecionado();
             if (filme == null)
             {
-                MessageBox.Show("Selecione um game para excluir.", "Aviso",
+                MessageBox.Show("Selecione um filme para excluir.", "Aviso",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -182,6 +182,23 @@ namespace CineGo.Desktop.UserControls
         }
 
         private async void btnAtualizar_Click(object sender, EventArgs e) => await CarregarDadosAsync();
-        
+
+        private void btnPesquisar_Click(object sender, EventArgs e) => FiltrarFilmes();
+
+        private void FiltrarFilmes()
+        {
+            var termo = txtPesquisa.Text.Trim().ToLower();
+            if (string.IsNullOrWhiteSpace(termo))
+            {
+                PopularGrid(_todosFilmes);
+                return;
+            }
+
+            var filtrados = _todosFilmes.
+                Where(f => f.Titulo.Contains(termo) ||
+                f.CategoryName.Contains(termo)).ToList();
+
+            PopularGrid(filtrados);
+        }
     }
 }
