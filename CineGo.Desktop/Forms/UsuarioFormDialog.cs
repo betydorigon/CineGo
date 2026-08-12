@@ -30,10 +30,10 @@ namespace CineGo.Desktop.Forms
 
             PreencherComboPerfis();
 
-            if (UsuarioExistente != null)
+            if (_usuarioExistente != null)
             {
                 lblTitulo.Text = "✏️ Editar Usuario";
-                txtEmail.Text = UsuarioExistente.Email;
+                txtEmail.Text = _usuarioExistente.Email;
 
                 if (cmbPerfil.Items.Contains(_usuarioExistente.Perfil))
                 {
@@ -44,7 +44,10 @@ namespace CineGo.Desktop.Forms
             {
                 lblTitulo.Text = "➕ Novo Usuario";
                 if (cmbPerfil.Items.Count > 0)
+                {
                     cmbPerfil.SelectedIndex = 0;
+                }
+                    
 
             }
         }
