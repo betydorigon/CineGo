@@ -248,6 +248,7 @@
             Controls.Add(lblTituloForm);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FilmeFormDialog";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FilmeFormDialog";
             ResumeLayout(false);
             PerformLayout();

@@ -89,7 +89,7 @@
             btnAvatar.FillColor = Color.RoyalBlue;
             btnAvatar.Font = new Font("Yu Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAvatar.ForeColor = Color.White;
-            btnAvatar.Location = new Point(248, 20);
+            btnAvatar.Location = new Point(250, 20);
             btnAvatar.Name = "btnAvatar";
             btnAvatar.ShadowDecoration.CustomizableEdges = customizableEdges1;
             btnAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;

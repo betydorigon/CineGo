@@ -259,6 +259,7 @@
             Controls.Add(lblTituloBemVindo);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             Load += LoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();

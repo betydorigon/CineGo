@@ -282,6 +282,7 @@
             Controls.Add(pnlUsuario);
             FormBorderStyle = FormBorderStyle.None;
             Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MainForm";
             Load += MainForm_Load;
             pnlUsuario.ResumeLayout(false);
