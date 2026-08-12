@@ -134,12 +134,7 @@ namespace CineGo.Desktop.UserControls
                 MessageBox.Show($"❌ {error}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-
-        private async Task btnAtualizar_Click(object? sender, EventArgs e) => await CarregarDadosAsync();
-
-        private async Task btnSalvar_Click(object sender, EventArgs e)
+        private async void btnSalvar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtNome.Text))
             {
@@ -175,9 +170,7 @@ namespace CineGo.Desktop.UserControls
 
         private void btnCancelar_Click(object sender, EventArgs e) => OcultarFormulario();
 
-        private void CategoriasUserControl_Load_1(object sender, EventArgs e)
-        {
+        private async void btnAtualizar_Click(object sender, EventArgs e) => await CarregarDadosAsync();
 
-        }
     }
 }

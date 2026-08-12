@@ -101,6 +101,7 @@
             btnAtualizar.Size = new Size(106, 45);
             btnAtualizar.TabIndex = 0;
             btnAtualizar.Text = "🔃 Atualizar";
+            btnAtualizar.Click += btnAtualizar_Click;
             // 
             // btnExcluir
             // 
@@ -209,6 +210,7 @@
             btnSalvar.Size = new Size(90, 34);
             btnSalvar.TabIndex = 2;
             btnSalvar.Text = "🗃️ Salvar";
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // txtNome
             // 

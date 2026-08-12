@@ -30,9 +30,6 @@ namespace CineGo.Infrastructure.Configurations
             builder.Property(f => f.RealeseYear)
                 .IsRequired();
 
-            builder.Property(f => f.Classificacao)
-                .IsRequired();
-
             builder.Property(f => f.CoverImageUrl)
                 .HasMaxLength(5000)
                 .HasColumnName("CoverImageUrl");
