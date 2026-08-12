@@ -69,7 +69,7 @@ namespace CineGo.Desktop.UserControls
             }
         }
 
-        private void PopularGrid(List<FilmeResponseDto > filmes)
+        private void PopularGrid(List<FilmeResponseDto> filmes)
         {
             gridFilmes.Rows.Clear();
             foreach (var f in filmes)
@@ -109,7 +109,7 @@ namespace CineGo.Desktop.UserControls
             }
         }
 
-        private async Task btnEditar_Click(object sender, EventArgs e)
+        private async void btnEditar_Click(object sender, EventArgs e)
         {
             var filme = ObterFilmeSelecionado();
             if (filme == null)
@@ -142,6 +142,7 @@ namespace CineGo.Desktop.UserControls
             }
         }
 
+
         private FilmeResponseDto? ObterFilmeSelecionado()
         {
             if (gridFilmes.SelectedRows.Count == 0) return null;
@@ -150,7 +151,7 @@ namespace CineGo.Desktop.UserControls
             return _todosFilmes.FirstOrDefault(g => g.Id == id);
         }
 
-        private async Task btnExcluir_Click(object sender, EventArgs e)
+        private async void btnExcluir_Click(object sender, EventArgs e)
         {
             var filme = ObterFilmeSelecionado();
             if (filme == null)
@@ -180,6 +181,7 @@ namespace CineGo.Desktop.UserControls
             }
         }
 
+
         private async void btnAtualizar_Click(object sender, EventArgs e) => await CarregarDadosAsync();
 
         private void btnPesquisar_Click(object sender, EventArgs e) => FiltrarFilmes();
@@ -199,5 +201,6 @@ namespace CineGo.Desktop.UserControls
 
             PopularGrid(filtrados);
         }
+
     }
 }

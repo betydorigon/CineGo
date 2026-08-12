@@ -117,6 +117,7 @@
             btnExcluir.Size = new Size(89, 36);
             btnExcluir.TabIndex = 1;
             btnExcluir.Text = "🗑️ Excluir";
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // btnEditar
             // 
@@ -135,6 +136,7 @@
             btnEditar.Size = new Size(89, 36);
             btnEditar.TabIndex = 1;
             btnEditar.Text = "✏️ Editar";
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnNovo
             // 
@@ -202,7 +204,6 @@
             gridFilmes.Name = "gridFilmes";
             gridFilmes.Size = new Size(684, 293);
             gridFilmes.TabIndex = 2;
-
             // 
             // colId
             // 
