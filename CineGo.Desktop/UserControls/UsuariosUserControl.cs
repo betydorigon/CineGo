@@ -18,7 +18,7 @@ namespace CineGo.Desktop.UserControls
     {
         private UsuariosApiService _usuariosService = null!;
         private List<UsuarioResponseDto> _todosUsuarios = new();
-        private List<UsuarioResponseDto> _perfis = new();
+        private List<string> _perfis = new();
         public UsuariosUserControl()
         {
             InitializeComponent();
@@ -98,7 +98,7 @@ namespace CineGo.Desktop.UserControls
             PopularGrid(filtrados);
         }
 
-        private async void  btnNovo_Click(object sender, EventArgs e)
+        private async void btnNovo_Click(object sender, EventArgs e)
         {
             using var form = new UsuarioFormDialog(_perfis, null);
             if (form.ShowDialog() == DialogResult.OK && form.CreateDto != null)

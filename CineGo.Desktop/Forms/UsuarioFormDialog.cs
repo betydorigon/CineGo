@@ -52,6 +52,15 @@ namespace CineGo.Desktop.Forms
             }
         }
 
+        private void PreencherComboPerfis()
+        {
+            cmbPerfil.Items.Clear();
+            foreach (var p in _perfis)
+            {
+                cmbPerfil.Items.Add(p);
+            }
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtEmail.Text))
@@ -111,13 +120,5 @@ namespace CineGo.Desktop.Forms
             this.Close();
         }
 
-        private void PreencherComboPerfis()
-        {
-            cmbPerfil.Items.Clear();
-            foreach (var p in _perfis)
-            {
-                cmbPerfil.Items.Add(p);
-            }
-        }
     }
 }
