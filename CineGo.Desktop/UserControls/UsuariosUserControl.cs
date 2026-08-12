@@ -18,7 +18,7 @@ namespace CineGo.Desktop.UserControls
     {
         private UsuariosApiService _usuariosService = null!;
         private List<UsuarioResponseDto> _todosUsuarios = new();
-        private List<string> _perfis = new();
+        private List<UsuarioResponseDto> _perfis = new();
         public UsuariosUserControl()
         {
             InitializeComponent();
