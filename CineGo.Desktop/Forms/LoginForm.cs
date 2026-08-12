@@ -69,14 +69,14 @@ namespace CineGo.Desktop.Forms
 
             if (string.IsNullOrWhiteSpace(txtEmail.Text))
             {
-                ExibirErro("Informe seu E-mail");
+                ExibirErro("⚠️ Informe seu E-mail");
                 txtEmail.Focus();
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(txtSenha.Text))
             {
-                ExibirErro("Informe sua Senha");
+                ExibirErro("⚠️ Informe sua Senha");
                 txtSenha.Focus();
                 return;
             }
@@ -94,7 +94,7 @@ namespace CineGo.Desktop.Forms
 
                     this.Hide();
 
-                    var mainForm = new MainForm();
+                    using var mainForm = new MainForm();
                     mainForm.ShowDialog();
 
                     this.Close();
@@ -102,7 +102,7 @@ namespace CineGo.Desktop.Forms
                 else
                 {
 
-                    ExibirErro($"X{errorMessage}");
+                    ExibirErro($"❌ {errorMessage}");
                     MessageBox.Show($"{errorMessage}");
                 }
             }

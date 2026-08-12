@@ -213,6 +213,7 @@
             Controls.Add(lblTitulo);
             FormBorderStyle = FormBorderStyle.None;
             Name = "UsuarioFormDialog";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "UsuarioFormDialog";
             ResumeLayout(false);
             PerformLayout();

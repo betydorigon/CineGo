@@ -145,7 +145,7 @@
             btnEntrar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
             btnEntrar.Font = new Font("Yu Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEntrar.ForeColor = Color.White;
-            btnEntrar.Location = new Point(87, 299);
+            btnEntrar.Location = new Point(87, 264);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.ShadowDecoration.CustomizableEdges = customizableEdges6;
             btnEntrar.Size = new Size(229, 45);
@@ -175,7 +175,7 @@
             // pnlSeparador2
             // 
             pnlSeparador2.BackColor = SystemColors.ActiveCaptionText;
-            pnlSeparador2.Location = new Point(19, 399);
+            pnlSeparador2.Location = new Point(19, 336);
             pnlSeparador2.Name = "pnlSeparador2";
             pnlSeparador2.Size = new Size(371, 1);
             pnlSeparador2.TabIndex = 11;
@@ -184,7 +184,7 @@
             // 
             lblProblemasEmAcessar.AutoSize = true;
             lblProblemasEmAcessar.ForeColor = SystemColors.ControlDark;
-            lblProblemasEmAcessar.Location = new Point(19, 407);
+            lblProblemasEmAcessar.Location = new Point(19, 345);
             lblProblemasEmAcessar.Name = "lblProblemasEmAcessar";
             lblProblemasEmAcessar.Size = new Size(329, 15);
             lblProblemasEmAcessar.TabIndex = 5;
@@ -194,7 +194,7 @@
             // 
             lblAPI.AutoSize = true;
             lblAPI.ForeColor = SystemColors.ControlDark;
-            lblAPI.Location = new Point(19, 429);
+            lblAPI.Location = new Point(19, 369);
             lblAPI.Name = "lblAPI";
             lblAPI.Size = new Size(40, 15);
             lblAPI.TabIndex = 5;
@@ -204,7 +204,7 @@
             // 
             lblErro.AutoSize = true;
             lblErro.ForeColor = SystemColors.ControlDark;
-            lblErro.Location = new Point(19, 450);
+            lblErro.Location = new Point(19, 392);
             lblErro.Name = "lblErro";
             lblErro.Size = new Size(43, 15);
             lblErro.TabIndex = 5;
@@ -231,7 +231,7 @@
             // 
             lblCarregando.AutoSize = true;
             lblCarregando.ForeColor = SystemColors.ControlDark;
-            lblCarregando.Location = new Point(158, 350);
+            lblCarregando.Location = new Point(158, 315);
             lblCarregando.Name = "lblCarregando";
             lblCarregando.Size = new Size(88, 15);
             lblCarregando.TabIndex = 13;
@@ -241,7 +241,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(406, 481);
+            ClientSize = new Size(406, 443);
             Controls.Add(lblCarregando);
             Controls.Add(btnFechar);
             Controls.Add(pnlSeparador2);
@@ -259,6 +259,7 @@
             Controls.Add(lblTituloBemVindo);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             Load += LoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
