@@ -14,7 +14,7 @@ namespace CineGo.Desktop.UserControls
 {
     public partial class CategoriasUserControl : UserControl
     {
-        private CategoriaApiService _CategoriaService = null;
+        private CategoriaApiService _CategoriaService = null!;
         private List<CategoriaResponseDto> _categorias = new();
 
         private int? _editandoId = null;
@@ -67,15 +67,17 @@ namespace CineGo.Desktop.UserControls
         // Novo: retorna a categoria selecionada no grid (ou null)
         private CategoriaResponseDto? ObterCategoriaSelecionada()
         {
-            // Tenta usar a linha atual (CurrentRow). Pode ajustar para SelectedRows se preferir seleção por múltiplas linhas.
-            var row = gridCategorias.CurrentRow;
-            if (row == null) return null;
+            //// Tenta usar a linha atual (CurrentRow). Pode ajustar para SelectedRows se preferir seleção por múltiplas linhas.
+            //var row = gridCategorias.CurrentRow;
+            //if (row == null) return null;
 
-            // Busca a célula pelo nome da coluna definido no Designer: "colID"
-            var cellValue = row.Cells["colID"]?.Value;
-            if (cellValue == null) return null;
+            //// Busca a célula pelo nome da coluna definido no Designer: "colID"
+            //var cellValue = row.Cells["colID"]?.Value;
+            //if (cellValue == null) return null;
 
-            if (!int.TryParse(cellValue.ToString(), out var id)) return null;
+            //if (!int.TryParse(cellValue.ToString(), out var id)) return null;
+            if (gridCategorias.SelectedRows.Count == 0) return null;
+            var id = Convert.ToInt32(gridCategorias.SelectedRows[0].Cells["colId"].Value);
 
             // Procura no cache de categorias carregadas
             return _categorias.FirstOrDefault(c => c.Id == id);
@@ -172,5 +174,13 @@ namespace CineGo.Desktop.UserControls
 
         private async void btnAtualizar_Click(object sender, EventArgs e) => await CarregarDadosAsync();
 
+        private async void CategoriasUserControl_Load_1(object sender, EventArgs e)
+        {
+            if (DesignMode) return;
+
+            _CategoriaService = new CategoriaApiService();
+
+            await CarregarDadosAsync();
+        }
     }
 }

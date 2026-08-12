@@ -109,7 +109,7 @@
             txtEmail.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
             txtEmail.Location = new Point(19, 150);
             txtEmail.Name = "txtEmail";
-            txtEmail.PlaceholderText = "seuemail@cinego.com";
+            txtEmail.PlaceholderText = "seuemail@cinego.com.br";
             txtEmail.SelectedText = "";
             txtEmail.ShadowDecoration.CustomizableEdges = customizableEdges2;
             txtEmail.Size = new Size(371, 36);

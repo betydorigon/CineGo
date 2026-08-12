@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace CineGo.Desktop.DTOs
 {
@@ -17,6 +19,7 @@ namespace CineGo.Desktop.DTOs
 
         public DateTime CreatedAt { get; set; }
 
+        [JsonPropertyName("categoryName")]
         public string CategoryName { get; set; } = string.Empty;
         
         public bool IsFeatured { get; set; }
@@ -30,7 +33,9 @@ namespace CineGo.Desktop.DTOs
         public string Sinopse { get; set; } = string.Empty;
         public int RealeseYear { get; set; }
         public string CoverImageUrl { get; set; } = string.Empty;
-        public int CategoryId { get; set; }
+        [Required]
+        [Range(1, int.MaxValue, ErrorMessage = "CategoriaId deve ser maior que zero.")]
+        public int? CategoriaId { get; set; }
         public int Classificacao { get; set; }
         public bool IsFeatured { get; set; }
     }

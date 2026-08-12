@@ -138,7 +138,7 @@ namespace CineGo.Desktop.Forms
                     Sinopse = txtSinopse.Text.Trim(),
                     RealeseYear = ano,
                     CoverImageUrl = txtCoverUrl.Text.Trim(),
-                    CategoryId = categoriaId
+                    CategoriaId = categoriaId
                 };
 
             }

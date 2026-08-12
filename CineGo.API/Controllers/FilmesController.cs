@@ -77,9 +77,9 @@ public class FilmesController : ControllerBase
     [Authorize(Roles = "Admin")]
     public async Task<ActionResult<FilmeDto>> Create([FromBody] CreateFilmesDto dto)
     {
-        var filme = await _filmeService.CreateAsync(dto);
+        if (!ModelState.IsValid) return BadRequest(ModelState);
 
-        // Retorna 201 Created com a URL do recurso criado
+        var filme = await _filmeService.CreateAsync(dto);
         return CreatedAtAction(nameof(GetById), new { id = filme.Id }, filme);
     }
 

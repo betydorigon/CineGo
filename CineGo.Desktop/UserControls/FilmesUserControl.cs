@@ -69,7 +69,7 @@ namespace CineGo.Desktop.UserControls
             }
         }
 
-        private void PopularGrid(List<FilmeResponseDto> filmes)
+        private void PopularGrid(List<FilmeResponseDto > filmes)
         {
             gridFilmes.Rows.Clear();
             foreach (var f in filmes)
@@ -78,7 +78,6 @@ namespace CineGo.Desktop.UserControls
                     f.Id,
                     f.Titulo,
                     f.CategoryName,
-                    f.Duracao,
                     f.RealeseYear,
                     f.CreatedAt.ToString("dd/MM/yyyy HH:mm"));
 

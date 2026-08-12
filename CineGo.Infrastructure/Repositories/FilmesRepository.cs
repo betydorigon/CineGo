@@ -56,6 +56,20 @@ namespace CineGo.Infrastructure.Repositories
 
         public async Task AddAsync(Filmes filme)
         {
+            // Valida explicitamente que a categoria existe antes de tentar persistir
+            var categoriaExiste = await _context.Categorias.AnyAsync(c => c.Id == filme.CategoriaId);
+            if (!categoriaExiste)
+                throw new InvalidOperationException($"Categoria com Id {filme.CategoriaId} inexistente.");
+
+            // Define CreatedAt se não informado
+            if (filme.CreatedAt == default) filme.CreatedAt = DateTime.UtcNow;
+
+            // Se um objeto Categoria estiver presente e já existir no DB, evita que o EF tente inserir novamente
+            if (filme.Categoria != null && filme.Categoria.Id > 0)
+            {
+                _context.Entry(filme.Categoria).State = EntityState.Unchanged;
+            }
+
             await _context.Filmes.AddAsync(filme);
             await _context.SaveChangesAsync();
         }

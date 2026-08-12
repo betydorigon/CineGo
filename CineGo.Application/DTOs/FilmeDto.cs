@@ -17,6 +17,7 @@ namespace CineGo.Application.DTOs
 
         public string CategoriaName { get; set; } = string.Empty;
 
+
     }
     public class CreateFilmesDto
     {
