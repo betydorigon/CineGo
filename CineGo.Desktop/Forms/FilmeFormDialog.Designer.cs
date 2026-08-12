@@ -58,93 +58,104 @@
             // lblTituloForm
             // 
             lblTituloForm.AutoSize = true;
+            lblTituloForm.Font = new Font("Yu Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTituloForm.Location = new Point(34, 23);
             lblTituloForm.Name = "lblTituloForm";
-            lblTituloForm.Size = new Size(36, 15);
+            lblTituloForm.Size = new Size(50, 19);
             lblTituloForm.TabIndex = 0;
             lblTituloForm.Text = "Filme";
             // 
             // lblCampTitulo
             // 
             lblCampTitulo.AutoSize = true;
+            lblCampTitulo.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
             lblCampTitulo.Location = new Point(34, 57);
             lblCampTitulo.Name = "lblCampTitulo";
-            lblCampTitulo.Size = new Size(110, 15);
+            lblCampTitulo.Size = new Size(123, 16);
             lblCampTitulo.TabIndex = 0;
             lblCampTitulo.Text = "TÍTULO DO FILME *";
             // 
             // lblCampSinopse
             // 
             lblCampSinopse.AutoSize = true;
+            lblCampSinopse.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
             lblCampSinopse.Location = new Point(34, 124);
             lblCampSinopse.Name = "lblCampSinopse";
-            lblCampSinopse.Size = new Size(53, 15);
+            lblCampSinopse.Size = new Size(61, 16);
             lblCampSinopse.TabIndex = 0;
             lblCampSinopse.Text = "SINOPSE";
             // 
             // lblCampAno
             // 
             lblCampAno.AutoSize = true;
+            lblCampAno.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
             lblCampAno.Location = new Point(34, 245);
             lblCampAno.Name = "lblCampAno";
-            lblCampAno.Size = new Size(141, 15);
+            lblCampAno.Size = new Size(151, 16);
             lblCampAno.TabIndex = 0;
             lblCampAno.Text = "ANO DE LANÇAMENTO *";
             // 
             // lblCampCover
             // 
             lblCampCover.AutoSize = true;
+            lblCampCover.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
             lblCampCover.Location = new Point(34, 310);
             lblCampCover.Name = "lblCampCover";
-            lblCampCover.Size = new Size(80, 15);
+            lblCampCover.Size = new Size(87, 16);
             lblCampCover.TabIndex = 0;
             lblCampCover.Text = "URL DA CAPA";
             // 
             // lblCampCategoria
             // 
             lblCampCategoria.AutoSize = true;
+            lblCampCategoria.Font = new Font("Yu Gothic", 9F, FontStyle.Bold);
             lblCampCategoria.Location = new Point(34, 375);
             lblCampCategoria.Name = "lblCampCategoria";
-            lblCampCategoria.Size = new Size(78, 15);
+            lblCampCategoria.Size = new Size(87, 16);
             lblCampCategoria.TabIndex = 0;
             lblCampCategoria.Text = "CATEGORIA *";
             // 
             // btnSalvar
             // 
+            btnSalvar.BorderRadius = 10;
             btnSalvar.CustomizableEdges = customizableEdges1;
             btnSalvar.DisabledState.BorderColor = Color.DarkGray;
             btnSalvar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnSalvar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnSalvar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSalvar.FillColor = Color.ForestGreen;
             btnSalvar.Font = new Font("Segoe UI", 9F);
             btnSalvar.ForeColor = Color.White;
-            btnSalvar.Location = new Point(34, 498);
+            btnSalvar.Location = new Point(34, 448);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            btnSalvar.Size = new Size(180, 45);
+            btnSalvar.Size = new Size(140, 45);
             btnSalvar.TabIndex = 1;
             btnSalvar.Text = "🗃️ Salvar";
             btnSalvar.Click += btnSalvar_Click;
             // 
             // btnCancelar
             // 
+            btnCancelar.BorderRadius = 10;
             btnCancelar.CustomizableEdges = customizableEdges3;
             btnCancelar.DisabledState.BorderColor = Color.DarkGray;
             btnCancelar.DisabledState.CustomBorderColor = Color.DarkGray;
             btnCancelar.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
             btnCancelar.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnCancelar.FillColor = Color.Silver;
             btnCancelar.Font = new Font("Segoe UI", 9F);
             btnCancelar.ForeColor = Color.White;
-            btnCancelar.Location = new Point(220, 498);
+            btnCancelar.Location = new Point(180, 448);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnCancelar.Size = new Size(180, 45);
+            btnCancelar.Size = new Size(125, 45);
             btnCancelar.TabIndex = 1;
             btnCancelar.Text = "Cancelar";
             btnCancelar.Click += btnCancelar_Click;
             // 
             // txtTitulo
             // 
+            txtTitulo.BorderRadius = 5;
             txtTitulo.CustomizableEdges = customizableEdges5;
             txtTitulo.DefaultText = "";
             txtTitulo.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -164,6 +175,7 @@
             // 
             // txtSinopse
             // 
+            txtSinopse.BorderRadius = 5;
             txtSinopse.CustomizableEdges = customizableEdges7;
             txtSinopse.DefaultText = "";
             txtSinopse.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -184,6 +196,7 @@
             // 
             // txtAno
             // 
+            txtAno.BorderRadius = 5;
             txtAno.CustomizableEdges = customizableEdges9;
             txtAno.DefaultText = "";
             txtAno.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -203,6 +216,7 @@
             // 
             // txtCoverUrl
             // 
+            txtCoverUrl.BorderRadius = 5;
             txtCoverUrl.CustomizableEdges = customizableEdges11;
             txtCoverUrl.DefaultText = "";
             txtCoverUrl.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
@@ -232,7 +246,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(520, 580);
+            ClientSize = new Size(520, 528);
             Controls.Add(cmbCategoria);
             Controls.Add(txtSinopse);
             Controls.Add(txtCoverUrl);
