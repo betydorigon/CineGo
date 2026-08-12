@@ -32,7 +32,7 @@ namespace CineGo.Desktop.Forms
 
             if (UsuarioExistente != null)
             {
-                lblTitulo.Text = "Editar Usuario";
+                lblTitulo.Text = "✏️ Editar Usuario";
                 txtEmail.Text = UsuarioExistente.Email;
 
                 if (cmbPerfil.Items.Contains(_usuarioExistente.Perfil))
@@ -42,7 +42,7 @@ namespace CineGo.Desktop.Forms
             }
             else
             {
-                lblTitulo.Text = "novo usuario";
+                lblTitulo.Text = "➕ Novo Usuario";
                 if (cmbPerfil.Items.Count > 0)
                     cmbPerfil.SelectedIndex = 0;
 
