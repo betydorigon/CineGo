@@ -34,7 +34,7 @@ namespace CineGo.Infrastructure.Configurations
                 .IsRequired();
 
             builder.Property(f => f.CoverImageUrl)
-                .HasMaxLength(500)
+                .HasMaxLength(5000)
                 .HasColumnName("CoverImageUrl");
 
             // Chave estrangeira para Categoria
