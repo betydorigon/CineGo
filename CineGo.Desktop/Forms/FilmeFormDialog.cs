@@ -74,24 +74,6 @@ namespace CineGo.Desktop.Forms
 
         private void FilmeFormDialog_Load(object sender, EventArgs e)
         {
-            //Guard: não executa em tempo de design
-            if (DesignMode) return;
-
-            // Configura título baseado no modo (criação/edição)
-            this.Text = _filmeExistente == null ? "Novo Filme" : "Editar Filme";
-            lblCampTitulo.Text = _filmeExistente == null ? "➕ Novo Filme" : "✏️ Editar Filme";
-
-            // Popula o ComboBox de categorias
-            cmbCategoria.Items.Clear();
-            cmbCategoria.Items.Add("Selecione uma categoria...");
-            foreach (var cat in _categorias)
-                cmbCategoria.Items.Add(cat.Name);
-            cmbCategoria.SelectedIndex = 0;
-
-
-
-            // Preenche campos se estiver no modo edição
-            PreencherCampos();
 
         }
 
@@ -181,7 +163,27 @@ namespace CineGo.Desktop.Forms
             this.Close();
         }
 
-  
+        private void FilmeFormDialog_Load_1(object sender, EventArgs e)
+        {
+            //Guard: não executa em tempo de design
+            if (DesignMode) return;
 
+            // Configura título baseado no modo (criação/edição)
+            this.Text = _filmeExistente == null ? "Novo Filme" : "Editar Filme";
+            lblCampTitulo.Text = _filmeExistente == null ? "➕ Novo Filme" : "✏️ Editar Filme";
+
+            // Popula o ComboBox de categorias
+            cmbCategoria.Items.Clear();
+            cmbCategoria.Items.Add("Selecione uma categoria...");
+            foreach (var cat in _categorias)
+                cmbCategoria.Items.Add(cat.Name);
+            cmbCategoria.SelectedIndex = 0;
+
+
+
+            // Preenche campos se estiver no modo edição
+            PreencherCampos();
+
+        }
     }
 }

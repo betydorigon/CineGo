@@ -25,7 +25,7 @@ namespace CineGo.Desktop.DTOs
 
     public class CreateFilmeDto
     {
-        public string Name { get; set; } = string.Empty;
+        public string Titulo { get; set; } = string.Empty;
         public string Duracao { get; set; } = string.Empty;
         public string Sinopse { get; set; } = string.Empty;
         public int RealeseYear { get; set; }
@@ -37,7 +37,7 @@ namespace CineGo.Desktop.DTOs
 
     public class UpdateFilmeDto
     {
-        public string Name { get; set; } = string.Empty;
+        public string Titulo { get; set; } = string.Empty;
         public string Duracao { get; set; } = string.Empty;
         public string Sinopse { get; set; } = string.Empty;
         public int RealeseYear { get; set; }
