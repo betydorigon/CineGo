@@ -151,7 +151,7 @@
             btnNova.FillColor = Color.ForestGreen;
             btnNova.Font = new Font("Segoe UI", 9F);
             btnNova.ForeColor = Color.White;
-            btnNova.Location = new Point(13, 27);
+            btnNova.Location = new Point(14, 27);
             btnNova.Name = "btnNova";
             btnNova.ShadowDecoration.CustomizableEdges = customizableEdges8;
             btnNova.Size = new Size(106, 45);
