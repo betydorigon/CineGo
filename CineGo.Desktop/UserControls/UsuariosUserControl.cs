@@ -18,7 +18,7 @@ namespace CineGo.Desktop.UserControls
     {
         private UsuariosApiService _usuariosService = null!;
         private List<UsuarioResponseDto> _todosUsuarios = new();
-        private List<UsuarioResponseDto> _perfis = new();
+        private List<string> _perfis = new() { "Admin", "User" };
         public UsuariosUserControl()
         {
             InitializeComponent();
@@ -178,12 +178,8 @@ namespace CineGo.Desktop.UserControls
             return _todosUsuarios.FirstOrDefault(u => u.Id == id);
         }
 
-        private void gridUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
 
-        private void GridUsuarios_CellDoubleClick(object? sender, DataGridViewCellEventArgs e)
-            => btnEditar_Click(sender, e);
+       
     }
 }

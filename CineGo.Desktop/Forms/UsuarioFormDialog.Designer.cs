@@ -227,6 +227,7 @@
             Name = "UsuarioFormDialog";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UsuarioFormDialog";
+            Load += UsuarioFormDialog_Load;
             ResumeLayout(false);
             PerformLayout();
         }

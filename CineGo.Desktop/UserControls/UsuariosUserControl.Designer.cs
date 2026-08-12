@@ -213,7 +213,7 @@
             gridUsuarios.Name = "gridUsuarios";
             gridUsuarios.Size = new Size(684, 288);
             gridUsuarios.TabIndex = 2;
-            gridUsuarios.CellContentClick += gridUsuarios_CellContentClick;
+          
             // 
             // colId
             // 

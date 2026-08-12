@@ -15,7 +15,7 @@ namespace CineGo.Application.DTOs
         public int Classificacao { get; set; }
         public string CoverImageUrl { get; set; } = string.Empty;
 
-        public string CategoriaName { get; set; } = string.Empty;
+        public string CategoryName { get; set; } = string.Empty;
 
 
     }

@@ -47,7 +47,7 @@ namespace CineGo.Desktop.Forms
                 {
                     cmbPerfil.SelectedIndex = 0;
                 }
-                    
+
 
             }
         }
@@ -118,6 +118,11 @@ namespace CineGo.Desktop.Forms
             {
                 cmbPerfil.Items.Add(p);
             }
+        }
+
+        private void UsuarioFormDialog_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
