@@ -169,7 +169,7 @@ namespace CineGo.Desktop.Forms
             if (DesignMode) return;
 
             // Configura título baseado no modo (criação/edição)
-            this.Text = _filmeExistente == null ? "➕ Novo Filme" : "✏️ Editar Filme";
+            this.Text = _filmeExistente == null ? "Novo Filme" : "Editar Filme";
             lblCampTitulo.Text = _filmeExistente == null ? "➕ Novo Filme" : "✏️ Editar Filme";
 
             // Popula o ComboBox de categorias
