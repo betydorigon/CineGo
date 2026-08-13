@@ -71,7 +71,6 @@ namespace CineGo.Desktop.UserControls
             {
                 gridUsuarios.Rows.Add(
                     u.Id,
-                    u.Name,
                     u.Email,
                     u.Perfil);
             }
@@ -174,8 +173,8 @@ namespace CineGo.Desktop.UserControls
         {
             if (gridUsuarios.SelectedRows.Count == 0) return null;
             var row = gridUsuarios.SelectedRows[0];
-            var id = row.Cells["colId"].Value?.ToString();
-            return _todosUsuarios.FirstOrDefault(u => u.Id == id);
+            var id = Convert.ToInt32(row.Cells["colId"].Value);
+            return _todosUsuarios.FirstOrDefault(u => u.Id == id.ToString());
         }
 
 
