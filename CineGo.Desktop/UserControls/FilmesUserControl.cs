@@ -196,8 +196,8 @@ namespace CineGo.Desktop.UserControls
             }
 
             var filtrados = _todosFilmes.
-                Where(f => f.Titulo.Contains(termo) ||
-                f.CategoryName.Contains(termo)).ToList();
+                Where(f => f.Titulo.Contains(termo, StringComparison.OrdinalIgnoreCase) ||
+                f.CategoryName.Contains(termo, StringComparison.OrdinalIgnoreCase)).ToList();
 
             PopularGrid(filtrados);
         }
