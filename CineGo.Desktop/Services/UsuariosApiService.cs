@@ -76,8 +76,7 @@ namespace CineGo.Desktop.Services
         /// <summary>
         /// Cria um novo usuário via POST /api/users.
         /// </summary>
-        public async Task<(bool Success, UsuarioResponseDto? Usuario, string ErrorMessage)>
-            CreateAsync(CreateUsuarioDto dto)
+        public async Task<(bool Success, UsuarioResponseDto? Usuario, string ErrorMessage)> CreateAsync(CreateUsuarioDto dto)
         {
             return await _http.PostAsync<UsuarioResponseDto>("/api/usuarios", dto);
         }

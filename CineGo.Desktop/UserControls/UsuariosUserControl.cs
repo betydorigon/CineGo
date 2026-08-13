@@ -71,9 +71,9 @@ namespace CineGo.Desktop.UserControls
             {
                 gridUsuarios.Rows.Add(
                     u.Id,
-                    u.Name,
-                    u.Email,
-                    u.Perfil);
+                    u.Email,  
+                    u.Perfil   
+                );
             }
         }
 
@@ -103,7 +103,7 @@ namespace CineGo.Desktop.UserControls
             using var form = new UsuarioFormDialog(_perfis, null);
             if (form.ShowDialog() == DialogResult.OK && form.CreateDto != null)
             {
-                var (success, _, error) = await _usuariosService.CreateAsync(form.CreateDto);
+                var (success, usuario, error) = await _usuariosService.CreateAsync(form.CreateDto);
                 if (success)
                 {
                     MessageBox.Show("✅ Usuário criado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);

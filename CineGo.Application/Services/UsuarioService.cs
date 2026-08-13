@@ -64,7 +64,7 @@ namespace CineGo.Application.Services
 
         public async Task<(bool Success, UsuarioDto? Usuario, string ErrorMessage)> CreateAsync(CreateUsuarioDto dto)
         {
-            if (dto.Senha != dto.ConfirmarSenha)
+            if (dto.Password != dto.ConfirmPassword)
                 return (false, null, "As senhas não coincidem.");
 
             // Verifica se e-mail já existe
@@ -78,7 +78,7 @@ namespace CineGo.Application.Services
                 Email = dto.Email
             };
 
-            var result = await _userManager.CreateAsync(user, dto.Senha);
+            var result = await _userManager.CreateAsync(user, dto.Password);
 
             if (!result.Succeeded)
             {
