@@ -120,6 +120,8 @@ namespace CineGo.Desktop.Forms
             this.Close();
         }
 
+    
+
         private void UsuarioFormDialog_Load(object sender, EventArgs e)
         {
 
