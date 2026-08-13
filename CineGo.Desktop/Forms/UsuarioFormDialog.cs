@@ -120,15 +120,6 @@ namespace CineGo.Desktop.Forms
             this.Close();
         }
 
-        private void PreencherComboPerfis()
-        {
-            cmbPerfil.Items.Clear();
-            foreach (var p in _perfis)
-            {
-                cmbPerfil.Items.Add(p);
-            }
-        }
-
         private void UsuarioFormDialog_Load(object sender, EventArgs e)
         {
 
